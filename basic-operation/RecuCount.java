@@ -7,7 +7,7 @@ public class RecuCount {
 
     static long sequence(int n) {
         long mod = (long) Math.pow(10, 9) + 7;
-        long ans;
+        long ans=0;
         // Base case
         if (n > 1000)
             return ans % mod;

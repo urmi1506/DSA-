@@ -1,10 +1,12 @@
 public class SumNo {
     public static void main(String[] args) {
-        int a= 1 2 3;
-        int b=5 6 7 ;
-        int c= 2 5 3 ;
+        int a= 123;
+        int b=567 ;
+        int c= 253 ;
+        int result =calcSum(a, b, c);
+        System.out.println("The sum of the numbers is: " + result);
     }
-    int calcSum(int a, int b, int c)    
+    static int calcSum(int a, int b, int c)    
 {
     return a+b+c;
 }

@@ -1,6 +1,4 @@
 import java.util.ArrayList;
-import java.util.* ;
-import java.io.*; 
 
 public class IntersectionOfSortArr {
     public static void main(String[] args) {

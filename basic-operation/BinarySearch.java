@@ -20,7 +20,7 @@ public class BinarySearch {
                     low = mid + 1; // Search in the right half
                 } else {
                     high = mid - 1; // Search in the left half
-                }re
+                }
             }
         
             return -1; // Element not found
