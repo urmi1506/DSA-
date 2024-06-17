@@ -1,6 +1,6 @@
 public class FibonacciNo {
     public static void main(String[] args) {
-        int n = 5;
+        int n = 4;
         long[] result = printFibb(n);
         
         for (long num : result) {

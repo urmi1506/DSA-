@@ -1,3 +1,5 @@
+package Recursion;
+
 public class RecStrPalindrome {
     public static void main(String[] args) {
         String str="abbaaa";

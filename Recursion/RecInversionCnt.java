@@ -1,3 +1,5 @@
+package Recursion;
+
 public class RecInversionCnt {
     //Brutal and Optimal
     public class RecMergeSort {

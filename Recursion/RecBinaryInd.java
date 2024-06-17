@@ -1,3 +1,5 @@
+package Recursion;
+
 public class RecBinaryInd {
   
         public static void main(String[] args) {

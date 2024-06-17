@@ -1,3 +1,5 @@
+package Recursion;
+
 public class RecMergeSort {
     public static void main(String[] args) {
         int n = 5;

@@ -1,3 +1,5 @@
+package Recursion;
+
 public class RecLinearSearch {
     public static void main(String[] args) {
         int n=4;

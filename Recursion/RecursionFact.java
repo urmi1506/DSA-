@@ -1,3 +1,5 @@
+package Recursion;
+
 public class RecursionFact {
     public static void main(String[] args) {
         int n=3;
