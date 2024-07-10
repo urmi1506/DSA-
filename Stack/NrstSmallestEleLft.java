@@ -1,14 +1,13 @@
 package Stack;
-
 import java.util.ArrayList;
 import java.util.Stack;
 
-public class NrstGrtEleLft { 
+public class NrstSmallestEleLft {
     public static void main(String[] args) {
        
             long[] arr = {4, 5, 2, 10, 8};
             int n = 5;
-            long[] result =greatestele (arr, n);
+            long[] result =smallestele (arr, n);
             
             // Print the result
             for (long num : result) {
@@ -16,11 +15,11 @@ public class NrstGrtEleLft {
             
         }
     }
-    public static long[] greatestele(long[] arr,int n){
+    public static long[] smallestele(long[] arr,int n){
         ArrayList <Long> list=new ArrayList<>();
         Stack <Long> s=new Stack<>();
         for(int i=0; i<n; i++){
-           while(!s.isEmpty() && s.peek()<=arr[i]){
+           while(!s.isEmpty() && s.peek()>=arr[i]){
             s.pop();
          }
             //stack is empty
@@ -35,7 +34,6 @@ public class NrstGrtEleLft {
             s.push(arr[i]);
            }
         
-        
         //convert arraylist to array
         long[] result = new long[n];
         for (int i = 0; i < n; i++) {
@@ -45,3 +43,7 @@ public class NrstGrtEleLft {
         return result;
     }
 }
+
+
+
+
