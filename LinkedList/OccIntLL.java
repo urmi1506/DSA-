@@ -8,8 +8,7 @@ public class OccIntLL {
         OccIntLL list = new OccIntLL();
         Node head = list.constructLL(values);
 
-        Solution solution = new Solution();
-        int occurrences = solution.count(head, key);
+        int occurrences = Solution.count(head, key);
 
         System.out.println("Number of occurrences of " + key + ": " + occurrences);
     }
