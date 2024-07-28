@@ -1,4 +1,4 @@
-package character_arr_str;
+package String;
 public class RemainingStr {
     public static String printString(String s, char ch, int count) {
         int cnt2 = 0;

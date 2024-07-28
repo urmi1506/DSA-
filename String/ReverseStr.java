@@ -1,4 +1,4 @@
-package character_arr_str;
+package String;
 
 public class ReverseStr {
     public static void main(String[] args) {

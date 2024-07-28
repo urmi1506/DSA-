@@ -1,4 +1,4 @@
-package character_arr_str;
+package String;
 import java.util.Scanner;
 
 public class lengthStr {

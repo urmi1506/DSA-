@@ -1,4 +1,4 @@
-package character_arr_str;
+package String;
 
 public class Stringleng {
     public static void main(String[] args) {
