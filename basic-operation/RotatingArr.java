@@ -21,25 +21,25 @@ public class RotatingArr {
     }
 }
 // optimized sol
-class Solution {
-    // Function to perform left rotation on the array
-    void leftRotate(int[] arr, int n, int d) {
-        // Use modulus to handle cases where d is greater than n
-        d = d % n;
+// class Solution {
+//     // Function to perform left rotation on the array
+//     void leftRotate(int[] arr, int n, int d) {
+//         // Use modulus to handle cases where d is greater than n
+//         d = d % n;
 
-        // Create a new array to store the rotated elements temporarily
-        int[] rotatedArr = new int[n];
+//         // Create a new array to store the rotated elements temporarily
+//         int[] rotatedArr = new int[n];
 
-        // Iterate through each element in the original array
-        for (int i = 0; i < n; i++) {
-            // Calculate the new index for the current element after rotation
-            int newIndex = (i + n - d) % n;
+//         // Iterate through each element in the original array
+//         for (int i = 0; i < n; i++) {
+//             // Calculate the new index for the current element after rotation
+//             int newIndex = (i + n - d) % n;
 
-            // Place the current element at its new rotated position
-            rotatedArr[newIndex] = arr[i];
-        }
+//             // Place the current element at its new rotated position
+//             rotatedArr[newIndex] = arr[i];
+//         }
 
-        // Copy the rotated array back to the original array
-        System.arraycopy(rotatedArr, 0, arr, 0, n);
-    }
-}
+//         // Copy the rotated array back to the original array
+//         System.arraycopy(rotatedArr, 0, arr, 0, n);
+//     }
+// }
