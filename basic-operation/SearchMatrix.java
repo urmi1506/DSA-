@@ -15,7 +15,7 @@ public class SearchMatrix {
     
             while (low <= high) {
                 int mid = low + (high - low) / 2;
-                int midVal = matrix[mid / cols][mid % cols]; // Calculate row and column indices
+                int midVal = matrix[mid / cols][mid % cols]; 
     
                 if (midVal == target) {
                     return true;
