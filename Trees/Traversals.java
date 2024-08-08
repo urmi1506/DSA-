@@ -1,5 +1,7 @@
 package Trees;
 
+// This is an Recursive Way of Traversal
+
 public class Traversals {
     static class Node{
         int data;
