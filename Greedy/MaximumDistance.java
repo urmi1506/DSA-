@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.ArrayList;
 import java.util.Arrays;
 
+// Optimize Solution
 public class MaximumDistance {
     public static int maxDistance(List<List<Integer>> arrays) {
         // min_value and max_value with first & last elements of the first array
