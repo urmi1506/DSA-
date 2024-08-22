@@ -13,7 +13,7 @@ import java.util.*;
     
     public class BurningTrees {
         static Map<Integer, List<Integer>> adjList = new HashMap<>();
-        static Node targetNode = null;
+         Node targetNode = null;
     
         public static int minTime(Node root, int target) {
             // Step 1: Build adjacency list from the binary tree
