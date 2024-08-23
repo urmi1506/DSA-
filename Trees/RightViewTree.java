@@ -1,0 +1,41 @@
+package Trees;
+
+import java.util.ArrayList;
+class Node
+{
+    int data;
+    Node left, right;
+
+    Node(int item)
+    {
+        data = item;
+        left = right = null;
+    }
+}
+
+public class RightViewTree {
+      static ArrayList<Integer> rightView(Node root)
+    {
+      ArrayList<Integer> res=new ArrayList<Integer>();
+      rightViewHelper(root,res,0);
+      return res;
+    }
+    static void rightViewHelper(Node currNode, ArrayList<Integer>res, int currDepth){
+        if(currNode==null)return;
+        
+        if(currDepth==res.size()){
+            res.add(currNode.data);
+        }
+        
+        rightViewHelper(currNode.right,res,currDepth+1);
+        rightViewHelper(currNode.left,res,currDepth+1);
+    }
+    public static void main(String[] args) {
+        Node root = new Node(1);
+        root.left=new Node(3);
+        root.right=new Node(2);
+        System.out.println(rightView( root));
+    }
+}
+
+
