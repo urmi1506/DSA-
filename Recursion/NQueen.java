@@ -1,5 +1,8 @@
 package Recursion;
 
+import java.util.ArrayList;
+import java.util.Collections;
+
 public class NQueen {
     public static ArrayList<ArrayList<Integer>> nQueen(int n) {
         

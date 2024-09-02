@@ -1,7 +1,10 @@
 package Trees;
 
 import java.util.ArrayList;
-class Node
+
+
+public class RightViewTree {
+    static class Node
 {
     int data;
     Node left, right;
@@ -12,8 +15,6 @@ class Node
         left = right = null;
     }
 }
-
-public class RightViewTree {
       static ArrayList<Integer> rightView(Node root)
     {
       ArrayList<Integer> res=new ArrayList<Integer>();

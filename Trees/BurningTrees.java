@@ -1,17 +1,16 @@
 package Trees;
 import java.util.*;
-
-    class Node {
-        int data;
-        Node left, right;
-        
-        Node(int item) {
-            data = item;
-            left = right = null;
-        }
-    }
     
     public class BurningTrees {
+        static class Node {
+            int data;
+            Node left, right;
+            
+            Node(int item) {
+                data = item;
+                left = right = null;
+            }
+        }
         static Map<Integer, List<Integer>> adjList = new HashMap<>();
          Node targetNode = null;
     

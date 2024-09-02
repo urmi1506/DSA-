@@ -1,15 +1,14 @@
 package LinkedList;
 
-class Node{
-    int data;
-    Node next;
-    Node(int d){
-        data=d;
-        next=null;
-    }
-}
-
 public class RotateLL {
+    static class Node{
+        int data;
+        Node next;
+        Node(int d){
+            data=d;
+            next=null;
+        }
+    }
 
     public static Node rotate(Node head, int k) {
         Node last=head;
