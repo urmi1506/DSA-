@@ -1,3 +1,4 @@
+package Recursion;
 
 public class NQueen {
     public static ArrayList<ArrayList<Integer>> nQueen(int n) {
