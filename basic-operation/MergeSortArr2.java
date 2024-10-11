@@ -27,7 +27,7 @@ public class MergeSortArr2 {
             mergedArray[k++] = nums2[j++];
         }
         
-        // Copy merged array back to nums1
+        // Copy merged arr to nums1
         for (i = 0; i < m + n; i++) {
             nums1[i] = mergedArray[i];
         }

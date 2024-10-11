@@ -8,7 +8,6 @@ public class MergeSortedArr {
         int[] arr3 = new int[n + m];
         
         merge(arr1, n, arr2, m, arr3);
-        //sortArray(arr3);
         printArray(arr3, n + m);
     }
 
@@ -39,9 +38,7 @@ public class MergeSortedArr {
         }
     }
 
-    // static void sortArray(int arr[]) {
-    //     Arrays.sort(arr);
-    // }
+    
 
     static void printArray(int res[], int n) {
         for (int i = 0; i < n; i++) {

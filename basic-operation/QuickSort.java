@@ -11,9 +11,8 @@ public class QuickSort {
     }
 
     static int partition(int arr[], int s, int e) {
-        // choose element
         int pivot = arr[s];
-        // Find pivotIndex
+        // Find pivotInd
         int cnt = 0;
         for (int i = s + 1; i <= e; i++) {
             if (arr[i] <= pivot)
@@ -24,7 +23,7 @@ public class QuickSort {
         int temp = arr[pivotInd];
         arr[pivotInd] = arr[s];
         arr[s] = temp;
-        // Sort left & right part with cond left<pivot<right
+        // Sort left & right part ...left<pivot<right
         int i = s;
         int j = e;
         while (i < pivotInd && j > pivotInd) {
@@ -35,7 +34,7 @@ public class QuickSort {
                 j--;
             }
             if (i < pivotInd && j > pivotInd) {
-                // Swap elements at i and j
+                // Swap 
                 int temp2 = arr[i];
                 arr[i] = arr[j];
                 arr[j] = temp2;
