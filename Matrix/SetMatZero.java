@@ -20,6 +20,7 @@ public class SetMatZero {
 
     private static void markRow(int[][] mat, int i) {
         int m = mat[0].length;
+    //    mark row to zero
         for (int j = 0; j < m; j++) {
             if (mat[i][j] != 0) { 
                 mat[i][j] = -1;
@@ -29,6 +30,7 @@ public class SetMatZero {
 
     private static void markCol(int[][] mat, int j) {
         int n = mat.length;
+        // mark Column to Zero
         for (int i = 0; i < n; i++) {
             if (mat[i][j] != 0) { 
                 mat[i][j] = -1;
@@ -39,6 +41,7 @@ public class SetMatZero {
     private static void convert(int[][] mat) {
         int n = mat.length;
         int m = mat[0].length;
+        // covert -1 to 0
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < m; j++) {
                 if (mat[i][j] == -1) {
