@@ -34,6 +34,7 @@ public class MergeSortArr2 {
     }
 
     static void printArray(int res[], int n) {
+        
         for (int i = 0; i < n; i++) {
             System.out.println(res[i]);
         }
