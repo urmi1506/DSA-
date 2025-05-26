@@ -1,5 +1,7 @@
 package Graph;
 import java.util.*;
+import java.util.List;
+
 public class AlienDict {
    
     public static String findOrder(String[] dict, int n, int k) {
