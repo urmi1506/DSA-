@@ -3,7 +3,7 @@ package Array;
 public class MissingNo {
     public static int missingNo(int nums[]){
         // we find missing val that y require + 1 in size
-        int n = nums.length +1; 
+        int n = nums.length + 1; 
         
         // we start from 1 bcz its identify missing val from 1 ...atlast possible of nums = [0,0]
         for (int i = 1; i < n; i++) {
