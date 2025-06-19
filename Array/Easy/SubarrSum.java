@@ -28,3 +28,4 @@ public class SubarrSum {
         System.out.println(sumK(arr, k));
     }
 }
+    
