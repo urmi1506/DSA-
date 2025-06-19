@@ -1,5 +1,6 @@
 package Medium;
 
+// Kadanes Algorithm
 public class MaxSubArr2 {
     public static int maxSubArray(int[] nums) {
        int n = nums.length;
