@@ -7,7 +7,7 @@ public class MaxSubArr3 {
         int maxSum = nums[0];
         int maxEnding = nums[0];
 
-        for (int i = 0; i < n; i++) {
+        for (int i = 1; i < n; i++) {
             
             // Find best maxEnding
             maxEnding = Math.max(maxEnding + nums[i], nums[i]);
@@ -17,7 +17,7 @@ public class MaxSubArr3 {
     return maxSum;
     }
     public static void main(String[] args) {
-        int[] nums = {-2,1,-3,4,-1,2,1,-5,4};
+        int[] nums = {2, 3, 5, -2, 7, -4};
         System.out.println(maxSubArray(nums));
     }
 }
