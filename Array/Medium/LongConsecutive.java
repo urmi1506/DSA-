@@ -6,7 +6,9 @@ public class LongConsecutive {
     public static int longestConsecutive(int[] nums) {
         int n = nums.length;
         Arrays.sort(nums);
+        // check longest len
         int res = 1;
+        // check Curr Len
         int cnt =1;
 
         for (int i = 1; i < n; i++) {
