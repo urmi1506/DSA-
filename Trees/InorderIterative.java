@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class InorderIterative {
 
-    class Node {
+    public class Node {
         int data;
         Node left;
         Node right;
