@@ -1,9 +1,9 @@
-package BinaryTree;
+package Easy;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Inorder {
+public class Postorder {
     static class Node{
         int val;
         Node right;
@@ -14,7 +14,7 @@ public class Inorder {
             this.right=left=null;
         }
     }
-    public static List<Integer> inorderTraversal(Node root) {
+    public static List<Integer> postorderTraversal(Node root) {
         ArrayList<Integer>res=new ArrayList<>();
         helper(root, res);
         return res;
@@ -23,8 +23,8 @@ public class Inorder {
         if(node == null) return  ;
 
         helper(node.left,res);
-        res.add(node.val);
         helper(node.right,res);
+        res.add(node.val);
     }
 
     public static void main(String[] args) {
@@ -34,12 +34,8 @@ public class Inorder {
         root.left.left = new Node(4);
         root.left.right = new Node(5);
 
-        ArrayList<Integer> Result = (ArrayList<Integer>) inorderTraversal(root);
+        ArrayList<Integer> Result = (ArrayList<Integer>) postorderTraversal(root);
 
         System.out.println(Result);
     }
-        
 }
-
-
-

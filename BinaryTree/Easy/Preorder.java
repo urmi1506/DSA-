@@ -1,20 +1,22 @@
-package BinaryTree;
+package Easy;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Postorder {
-    static class Node{
-        int val;
-        Node right;
-        Node left;
+public class Preorder {
+    public static class Node {
+      int val;
+      Node left;
+      Node right;
+      Node(int val){
+        this.val=val;
+        this.left=right=null;
 
-        Node(int val){
-            this.val=val;
-            this.right=left=null;
-        }
-    }
-    public static List<Integer> postorderTraversal(Node root) {
+      }
+    
+      
+  }
+    public static List<Integer> preorderTraversal(Node root) {
         ArrayList<Integer>res=new ArrayList<>();
         helper(root, res);
         return res;
@@ -22,9 +24,9 @@ public class Postorder {
     private static void helper(Node node ,ArrayList<Integer>res){
         if(node == null) return  ;
 
+        res.add(node.val);
         helper(node.left,res);
         helper(node.right,res);
-        res.add(node.val);
     }
 
     public static void main(String[] args) {
@@ -34,8 +36,10 @@ public class Postorder {
         root.left.left = new Node(4);
         root.left.right = new Node(5);
 
-        ArrayList<Integer> Result = (ArrayList<Integer>) postorderTraversal(root);
+        ArrayList<Integer> Result = (ArrayList<Integer>) preorderTraversal(root);
 
         System.out.println(Result);
     }
+        
 }
+

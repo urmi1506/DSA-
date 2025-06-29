@@ -1,22 +1,20 @@
-package BinaryTree;
+package Easy;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Preorder {
-    public static class Node {
-      int val;
-      Node left;
-      Node right;
-      Node(int val){
-        this.val=val;
-        this.left=right=null;
+public class Inorder {
+    static class Node{
+        int val;
+        Node right;
+        Node left;
 
-      }
-    
-      
-  }
-    public static List<Integer> preorderTraversal(Node root) {
+        Node(int val){
+            this.val=val;
+            this.right=left=null;
+        }
+    }
+    public static List<Integer> inorderTraversal(Node root) {
         ArrayList<Integer>res=new ArrayList<>();
         helper(root, res);
         return res;
@@ -24,8 +22,8 @@ public class Preorder {
     private static void helper(Node node ,ArrayList<Integer>res){
         if(node == null) return  ;
 
-        res.add(node.val);
         helper(node.left,res);
+        res.add(node.val);
         helper(node.right,res);
     }
 
@@ -36,10 +34,12 @@ public class Preorder {
         root.left.left = new Node(4);
         root.left.right = new Node(5);
 
-        ArrayList<Integer> Result = (ArrayList<Integer>) preorderTraversal(root);
+        ArrayList<Integer> Result = (ArrayList<Integer>) inorderTraversal(root);
 
         System.out.println(Result);
     }
         
 }
+
+
 
