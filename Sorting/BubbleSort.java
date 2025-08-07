@@ -12,7 +12,7 @@ public class BubbleSort {
         // traverse passes from 1 to n-1....traversing whole array  we canalso take i=1 i<n 
     
         for (int i = 0; i < n-1; i++) {
-        // for swap element & take n-1-i bcz every time we sorted the largest element and after that their is no need to sort that element j=0 j<n-i
+        // for swap element & take n-1-i bcz every time we sorted the largest element and after that their is no need to sort that element j=0 j<n-i-1
             for (int j = 0; j < n-1-i; j++) {
                if(arr[j]>arr[j+1]) {
                 int temp =arr[j];
