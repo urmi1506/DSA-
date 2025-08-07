@@ -10,8 +10,8 @@ public class KmissingNo {
         return k;
     }
     public static void main(String[] args) {
-        int []arr = {2,3,4,7,11};
-        int k = 5;
+        int []arr = {1,2,3,4};
+        int k = 2;
         System.out.println(findKthPositive(arr, k));
     }
 }
