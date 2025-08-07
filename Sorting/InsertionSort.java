@@ -11,7 +11,7 @@ public class InsertionSort {
         }
     
         public static void insertionSort(int arr[], int n) {
-            // assume 1st element is already sorted
+            // Assume 1st element is already sorted
             for (int i = 1; i < n ; i++) {
                 int temp=arr[i];
                 int j = i - 1;
