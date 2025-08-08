@@ -3,7 +3,7 @@ package Sorting;
 public class MergeSortedArr {
     public static void main(String[] args) {
         int n = 5;
-        int arr1[] = {1, 3, 5, 7, 9};
+        int arr1[] = {1, 3, 5, 7,9};
         int m = 3;
         int arr2[] = {2, 4, 6};
         int[] arr3 = new int[n + m];
