@@ -4,8 +4,9 @@ import java.util.Arrays;
 
 public class AggressiveCow {
      public static int aggressiveCows(int[] stalls, int k) {
+        // sort
         Arrays.sort(stalls);
-
+        // search
         int low = 1; 
         int high = stalls[stalls.length - 1] - stalls[0]; 
         int res = 0;
@@ -23,7 +24,7 @@ public class AggressiveCow {
 
         return res; 
     }
-
+    // place
     private static boolean canPlaceCows(int[] stalls, int cows, int dist) {
         int cnt = 1; 
         int lastPos = stalls[0]; 
