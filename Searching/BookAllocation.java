@@ -6,7 +6,7 @@ public class BookAllocation {
     
     public static int findPages(int[] arr, int k) {
         int n = arr.length;
-        
+
         if (n < k) return -1;  
         
         int start = Arrays.stream(arr).max().getAsInt();  
