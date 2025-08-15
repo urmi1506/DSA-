@@ -1,7 +1,7 @@
 package Medium;
 import java.util.Vector;
 import java.util.Arrays;
-
+// GM
 public class MergeVector {
     public static void main(String[] args) {
         Vector<Integer> v1 = new Vector<>(Arrays.asList(1, 3, 5));
