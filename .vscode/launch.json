@@ -6,6 +6,83 @@
     "configurations": [
         {
             "type": "java",
+            "name": "LeaderArray",
+            "request": "launch",
+            "mainClass": "Medium.LeaderArray",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "LeadersArr",
+            "request": "launch",
+            "mainClass": "Medium.LeadersArr",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "MergeVector2",
+            "request": "launch",
+            "mainClass": "Medium.MergeVector2",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "ArrayListDemo",
+            "request": "launch",
+            "mainClass": "Collections.ArrayListDemo",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "MergeTwoSortArr",
+            "request": "launch",
+            "mainClass": "Sorting.MergeTwoSortArr",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "MergeSort",
+            "request": "launch",
+            "mainClass": "Sorting.MergeSort",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "ReverseNo",
+            "request": "launch",
+            "mainClass": "Basic.ReverseNo",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "Palindrome",
+            "request": "launch",
+            "mainClass": "Basic.Palindrome",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "InsertionSortEx",
+            "request": "launch",
+            "mainClass": "Sorting.InsertionSortEx",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "KokoEatBananas",
+            "request": "launch",
+            "mainClass": "BinarySearch.KokoEatBananas",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "KokoEatingBananas",
+            "request": "launch",
+            "mainClass": "BinarySearch.KokoEatingBananas",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
             "name": "KthMissingNo",
             "request": "launch",
             "mainClass": "BinarySearch.KthMissingNo",

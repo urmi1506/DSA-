@@ -5,21 +5,25 @@ import java.util.Arrays;
 public class LongConsecutive {
     public static int longestConsecutive(int[] nums) {
         int n = nums.length;
+        // Edge case
+        if(n==0) return 0;
         Arrays.sort(nums);
         // check longest len
-        int res = 1;
+        int longest = 1;
         // check Curr Len
-        int cnt =1;
+        int currCnt =1;
 
         for (int i = 1; i < n; i++) {
             if(nums[i] == nums[i-1]) continue;
-            if(nums[i] == nums[i-1]+1) cnt ++;
-            else cnt =1;
+            else if(nums[i] == nums[i-1]+1){
+                currCnt ++;
+                longest=Math.max(currCnt, longest);
 
-            res=Math.max(res,cnt);
+            } 
+            else currCnt =1;
 
         }
-    return res;
+    return longest;
         
     }
     public static void main(String[] args) {
