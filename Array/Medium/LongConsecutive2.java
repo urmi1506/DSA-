@@ -19,15 +19,15 @@ public class LongConsecutive2 {
         }
 
         // Find the longest sequence
-        for (int it : set) {
+        for (int start : set) {
             // if 'it' is a starting number
-            if (!set.contains(it - 1)) {
+            if (!set.contains(start - 1)) {
                 // find consecutive numbers
                 int cnt = 1;
-                int x = it;
+                int x = start;
                 while (set.contains(x + 1)) {
                     x = x + 1;
-                    cnt = cnt + 1;
+                    cnt ++;
                 }
                 longest = Math.max(longest, cnt);
             }
@@ -38,7 +38,7 @@ public class LongConsecutive2 {
     public static void main(String[] args) {
         int[] a = {100, 200, 1, 2, 3, 4};
         int ans = longestSuccessiveElements(a);
-        System.out.println("The longest consecutive sequence is " + ans);
+        System.out.println(ans);
     }
 }
 
