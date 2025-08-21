@@ -3,23 +3,7 @@ package LinkedList;
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class InsertionSortSLL {
-    public static void main(String[] args) {
-        int[] values = {3, 1, 5, 2, 4};
-        InsertionSortSLL list = new InsertionSortSLL();
-        Node head = list.constructLL(values);
-
-        System.out.print("Original Linked List: ");
-        list.printLinkedList(head);
-
-        Solution solution = new Solution();
-        head = solution.insertionSort(head);
-
-        System.out.print("Sorted Linked List: ");
-        list.printLinkedList(head);
-    }
-
-    static class Node {
+class Node {
         int data;
         Node next;
 
@@ -29,7 +13,22 @@ public class InsertionSortSLL {
         }
     }
 
-    Node constructLL(int[] values) {
+public class InsertionSortSLL {
+    public static void main(String[] args) {
+        int[] values = {3, 1, 5, 2, 4};
+        Node head = constructLL(values);
+
+        System.out.print("Original Linked List: ");
+        printLinkedList(head);
+
+        head = insertionSort(head);
+
+        System.out.print("Sorted Linked List: ");
+        printLinkedList(head);
+    }
+
+
+    static Node constructLL(int[] values) {
         if (values.length == 0) {
             return null;
         }
@@ -44,7 +43,7 @@ public class InsertionSortSLL {
         return head;
     }
 
-    void printLinkedList(Node head) {
+    static void printLinkedList(Node head) {
         Node temp = head;
         while (temp != null) {
             System.out.print(temp.data + " ");
@@ -53,8 +52,7 @@ public class InsertionSortSLL {
         System.out.println();
     }
 
-    static class Solution {
-        Node insertionSort(Node head) {
+        static Node insertionSort(Node head) {
             if (head == null || head.next == null) {
                 return head;
             }
@@ -76,5 +74,5 @@ public class InsertionSortSLL {
 
             return head;
         }
-    }
+    
 }
