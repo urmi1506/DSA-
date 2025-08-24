@@ -13,7 +13,7 @@ class ListNode {
 public class AddTwoNo {
     public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode dummy = new ListNode(0);
-        ListNode current = dummy;
+        ListNode curr = dummy;
 
         int carry = 0;
 
@@ -25,15 +25,15 @@ public class AddTwoNo {
             carry = sum / 10;  
             int digit = sum % 10; 
 
-            current.next = new ListNode(digit); 
-            current = current.next;
+            curr.next = new ListNode(digit); 
+            curr = curr.next;
 
             if (l1 != null) l1 = l1.next;
             if (l2 != null) l2 = l2.next;
         }
 
         if (carry > 0) {
-            current.next = new ListNode(carry);
+            curr.next = new ListNode(carry);
         }
 
         return dummy.next; 
