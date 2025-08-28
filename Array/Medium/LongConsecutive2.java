@@ -7,8 +7,8 @@ public class LongConsecutive2 {
 
     public static int longestSuccessiveElements(int[] a) {
         int n = a.length;
-        if (n == 0)
-            return 0;
+
+        if (n == 0)return 0;
 
         int longest = 1;
         Set<Integer> set = new HashSet<>();
