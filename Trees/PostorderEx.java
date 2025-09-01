@@ -8,6 +8,7 @@ public class PostorderEx {
             data=key;
         }
     }
+    // Recursive - Postorder
     static void postorder(Node node){
         if(node==null){
             return;
