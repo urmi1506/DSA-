@@ -7,6 +7,7 @@ public class PreorderEx {
             data=key;
         }
     }
+    // Recursive Preorder
     static void preorder(Node node){
        if(node==null){
         return;
