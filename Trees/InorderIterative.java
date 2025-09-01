@@ -11,11 +11,10 @@ public class InorderIterative {
 
         Node(int data) {
             this.data = data;
-            left = null;
-            right = null;
+            left = right=null;
         }
     }
-
+    
     ArrayList<Integer> inOrder(Node node) {
         ArrayList<Integer> res = new ArrayList<>();
         inOrderHelper(node, res);
