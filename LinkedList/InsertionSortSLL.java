@@ -15,7 +15,7 @@ class Node {
 
 public class InsertionSortSLL {
     public static void main(String[] args) {
-        int[] values = {3, 1, 5, 2, 4};
+        int[] values = {3, 1, 5, 2, 4,6};
         Node head = constructLL(values);
 
         System.out.print("Original Linked List: ");
