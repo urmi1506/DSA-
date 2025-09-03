@@ -5,9 +5,7 @@ This repository contains solutions to various Data Structures and Algorithms (DS
 I created this repo to:
 
 📖 Practice and revise DSA concepts.
-
 💡 Improve problem-solving skills.
-
 📝 Keep track of solved problems for quick reference.
 
 🛠️ Tech Stack
