@@ -7,7 +7,8 @@ public class MergeTwoSortArr {
         int n = merged.length;
 
         // Find median
-        if (n % 2 != 0) { // odd
+        if (n % 2 != 0) { 
+            // odd
             return merged[n / 2];
         } else { // even
             return (merged[n / 2 - 1] + merged[n / 2]) / 2.0;
