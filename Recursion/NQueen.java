@@ -67,4 +67,11 @@ public class NQueen {
         }
         return res;
     }
+    public static void main(String[] args) {
+        int n=4;
+        ArrayList<ArrayList<Integer>> ans=nQueen(n);
+        for(ArrayList<Integer> list:ans){
+            System.out.println(list);
+        }
+    }
 }
