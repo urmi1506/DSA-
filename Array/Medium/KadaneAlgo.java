@@ -6,7 +6,7 @@ public class KadaneAlgo {
         int maxi=Integer.MIN_VALUE;
         for (int i = 0; i < n; i++) {
             sum+=nums[i];
-            if (maxi >sum) sum=maxi;
+            if (sum > maxi) maxi=sum;
             if (sum <0) sum=0;
         }
         return sum;
