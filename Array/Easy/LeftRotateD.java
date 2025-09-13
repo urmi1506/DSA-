@@ -3,7 +3,7 @@ package Easy;
 public class LeftRotateD {
 
     public static void LeftRotateByK(int[] arr, int n, int k) {
-        k = k % n;  // handle k > n
+        k = k % n;  
 
         // Store first k elements
         int[] temp = new int[k];
