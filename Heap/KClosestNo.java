@@ -21,5 +21,7 @@ public class KClosestNo {
         int k = 3;
         int x = 7;
         kClosestno(nums,k,x);
+    
+
     }
 }
