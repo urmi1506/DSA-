@@ -3,7 +3,7 @@ package Easy;
 public class LeftRotate{
     public static void leftRotateByOne(int[]arr ,int n){
 
-        // Dummy Arr to stored data
+        // Dummy Array to stored data
         int []temp =new int[n];
         temp[n-1] =arr[0];
 
