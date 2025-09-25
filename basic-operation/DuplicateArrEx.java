@@ -8,6 +8,7 @@ public class DuplicateArrEx {
         arr.add(1);
         arr.add(3);
         arr.add(1);
+        arr.add(2);
         int n = arr.size();
         ArrayList<Integer> res = duplicates(arr, n); 
         System.out.println(res);
