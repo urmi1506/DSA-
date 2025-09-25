@@ -1,6 +1,6 @@
 public class isPrimeNo {
     public static void main(String[] args) {
-       int N=5;
+       int N=10;
        System.out.println(isPrime( N)); 
     }
     static int isPrime(int N){
