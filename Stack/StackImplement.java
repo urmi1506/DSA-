@@ -46,7 +46,7 @@ public class StackImplement {
     }
 
     public static void main(String[] args) {
-        StackImplement stack = new StackImplement(5);  // Create a stack of size 5
+        StackImplement stack = new StackImplement(5);  
         stack.push(10);
         stack.push(20);
         stack.push(30);
