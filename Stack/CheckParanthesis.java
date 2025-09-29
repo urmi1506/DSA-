@@ -4,7 +4,6 @@ import java.util.Stack;
 
 public class CheckParanthesis {
     public static boolean isValid(String s){
-        // initialize stack
         Stack<Character> s1=new Stack<>();
         // traverse string
         for (int i = 0; i < s.length(); i++) {
