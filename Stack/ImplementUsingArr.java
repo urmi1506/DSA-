@@ -1,4 +1,3 @@
-package Stack;
 
 public class ImplementUsingArr {
     static int []arr;
