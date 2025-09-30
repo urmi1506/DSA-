@@ -1,4 +1,3 @@
-package Stack;
 import java.util.Stack;
 class StackOpe{
     public static void main(String[] args) {
