@@ -1,4 +1,3 @@
-package Stack;
 
 public class StackImplement {
     private int[] arr; 
