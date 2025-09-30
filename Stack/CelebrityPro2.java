@@ -1,4 +1,3 @@
-package Stack;
 
 public class CelebrityPro2 {
     public static int celebrity(int mat[][]) {
