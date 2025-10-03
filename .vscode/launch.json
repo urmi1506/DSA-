@@ -6,6 +6,321 @@
     "configurations": [
         {
             "type": "java",
+            "name": "TrappingRainWater",
+            "request": "launch",
+            "mainClass": "Graph.TrappingRainWater",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "MinStack",
+            "request": "launch",
+            "mainClass": "MinStack",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "NextSmaller",
+            "request": "launch",
+            "mainClass": "Stack.NextSmaller",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "SortStack",
+            "request": "launch",
+            "mainClass": "Stack.SortStack",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "NextGreater",
+            "request": "launch",
+            "mainClass": "Stack.NextGreater",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "CheckParanthesis",
+            "request": "launch",
+            "mainClass": "Stack.CheckParanthesis",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "RepeatingAndMissing",
+            "request": "launch",
+            "mainClass": "Hard.RepeatingAndMissing",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "Duplicate",
+            "request": "launch",
+            "mainClass": "Medium.Duplicate",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "DetectCycles",
+            "request": "launch",
+            "mainClass": "LinkedList.DetectCycles",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "DetectCycle",
+            "request": "launch",
+            "mainClass": "LinkedList.DetectCycle",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "DuplicateNo",
+            "request": "launch",
+            "mainClass": "Medium.DuplicateNo",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "MinCost",
+            "request": "launch",
+            "mainClass": "Heap.MinCost",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "KClosestOrigin",
+            "request": "launch",
+            "mainClass": "Heap.KClosestOrigin",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "FreqSort",
+            "request": "launch",
+            "mainClass": "Heap.FreqSort",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "TopKEle",
+            "request": "launch",
+            "mainClass": "Heap.TopKEle",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "KClosestNo",
+            "request": "launch",
+            "mainClass": "Heap.KClosestNo",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "KsortedArr",
+            "request": "launch",
+            "mainClass": "Heap.KsortedArr",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "NQueen",
+            "request": "launch",
+            "mainClass": "Recursion.NQueen",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "kLargestElements",
+            "request": "launch",
+            "mainClass": "Heap.kLargestElements",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "kthSmallestEle",
+            "request": "launch",
+            "mainClass": "Heap.kthSmallestEle",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "kthSmallestElement",
+            "request": "launch",
+            "mainClass": "Heap.kthSmallestElement",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "KthLargestElement",
+            "request": "launch",
+            "mainClass": "Heap.KthLargestElement",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "DeleteNode",
+            "request": "launch",
+            "mainClass": "LinkedList.DeleteNode",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "RemoveFromEnd",
+            "request": "launch",
+            "mainClass": "LinkedList.RemoveFromEnd",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "MergeInterval",
+            "request": "launch",
+            "mainClass": "Medium.MergeInterval",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "MergeWithoutSpace",
+            "request": "launch",
+            "mainClass": "Sorting.MergeWithoutSpace",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "RevString",
+            "request": "launch",
+            "mainClass": "String.RevString",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "BuySell",
+            "request": "launch",
+            "mainClass": "Easy.BuySell",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "NextPermutatio",
+            "request": "launch",
+            "mainClass": "Matrix.NextPermutatio",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "KthLargestEle",
+            "request": "launch",
+            "mainClass": "Heap.KthLargestEle",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "MajorityElements",
+            "request": "launch",
+            "mainClass": "Hard.MajorityElements",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "SearchMatrixs",
+            "request": "launch",
+            "mainClass": "Matrix.SearchMatrixs",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "MajorityEle",
+            "request": "launch",
+            "mainClass": "Hard.MajorityEle",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "Majority",
+            "request": "launch",
+            "mainClass": "Hard.Majority",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "MiddleOfLL",
+            "request": "launch",
+            "mainClass": "LinkedList.MiddleOfLL",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "MiddleLinkedList",
+            "request": "launch",
+            "mainClass": "LinkedList.MiddleLinkedList",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "SortColors",
+            "request": "launch",
+            "mainClass": "Hashing.SortColors",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "ReveseArray",
+            "request": "launch",
+            "mainClass": "Easy.ReveseArray",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "RevArr",
+            "request": "launch",
+            "mainClass": "Easy.RevArr",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "RemoveParanthesis",
+            "request": "launch",
+            "mainClass": "String.RemoveParanthesis",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "RevLL",
+            "request": "launch",
+            "mainClass": "LinkedList.RevLL",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "AddTwoNo",
+            "request": "launch",
+            "mainClass": "LinkedList.AddTwoNo",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "LongestPalindromeSubStr",
+            "request": "launch",
+            "mainClass": "String.LongestPalindromeSubStr",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "PalindromeString",
+            "request": "launch",
+            "mainClass": "String.PalindromeString",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "BasicOperations",
+            "request": "launch",
+            "mainClass": "String.BasicOperations",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
             "name": "LeaderArray",
             "request": "launch",
             "mainClass": "Medium.LeaderArray",

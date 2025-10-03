@@ -1,5 +1,6 @@
 {
     "explorer.compactFolders": true,
     "explorer.fileNesting.enabled": false,
-    "explorer.expandSingleFolderWorkspaces": true
+    "explorer.expandSingleFolderWorkspaces": true,
+    "java.debug.settings.onBuildFailureProceed": true
 }
