@@ -1,5 +1,6 @@
 package Easy;
 
+// TC : O(N) SC: O(1)
 public class BuySell {
     public static int maxProfit(int[] prices) {
         // sell price must always come after buy price (hence not update sell otherwise its not match above cond)
