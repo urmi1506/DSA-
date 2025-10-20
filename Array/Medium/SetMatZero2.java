@@ -1,5 +1,6 @@
 package Medium;
 
+// TC : O(N*M) SC: O(N+M)
 public class SetMatZero2 {
     public static void setZeroes(int[][] matrix) {
         int n=matrix.length;
