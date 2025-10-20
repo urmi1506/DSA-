@@ -1,5 +1,6 @@
 package Medium;
 
+// TC : O(N) SC: O(1)
 public class MaxSubArr3 {
     public static int maxSubArray(int[] nums) {
         int n = nums.length;
@@ -13,6 +14,7 @@ public class MaxSubArr3 {
             maxEnding = Math.max(maxEnding + nums[i], nums[i]);
             // Find max Sum
             maxSum = Math.max(maxEnding, maxSum);
+            
         }
     return maxSum;
     }
