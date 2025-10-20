@@ -1,5 +1,6 @@
 package Medium;
 import java.util.Arrays;
+// TC : O(N log N) SC: O(1)
 public class SortZeroOneTwo {
     public static void sortZeroesOnesTwo (int [] nums){
         Arrays.sort(nums);
