@@ -1,5 +1,6 @@
 package Medium;
 
+// TC : O(N*M*(N+M)) SC: O(1)
 public class SetMatZero {
     public static void setZeroes(int[][] matrix) {
         int n=matrix.length;
@@ -39,8 +40,8 @@ public class SetMatZero {
         int matrix[][]={{1,1,1},{1,0,1},{1,1,1}};
         setZeroes(matrix);
         for (int[] row : matrix) {
-            for (int val : row) {
-                System.out.print(val + " ");
+            for (int res : row) {
+                System.out.print(res + " ");
             }
             System.out.println();
         }
