@@ -1,5 +1,5 @@
 package Medium;
-
+// TC : O(N^2) SC: O(1)
 public class MaxSubArr {
      public static int maxSubArray(int[] nums) {
         int n=nums.length;
@@ -9,6 +9,7 @@ public class MaxSubArr {
             for(int j= i; j<n ; j++){
                 currSum += nums[j];
                 if(currSum > maxSum ) maxSum = currSum;
+                if (currSum <0) currSum=0;
             }
         }
     return maxSum;
