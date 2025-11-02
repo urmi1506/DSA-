@@ -16,12 +16,12 @@ class ListNode {
 public class PalindromeLL {
      public static boolean isPalindrome(ListNode head) {
         List<Integer> list = new ArrayList<>();
-
+        // Traverse LinkedList
         while (head != null) {
             list.add(head.val);
             head = head.next;
         }
-
+        // Check for palindrome
         int left = 0;
         int right = list.size() - 1;
 
