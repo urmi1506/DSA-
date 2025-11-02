@@ -52,8 +52,8 @@ public class InorderStack {
         root.left.left = new TreeNode(4);
         root.left.right = new TreeNode(5);
 
-        List<Integer> inOrderResult = inorderTraversal(root);
+        List<Integer>Res = inorderTraversal(root);
 
-        System.out.println(  inOrderResult);
+        System.out.println(Res);
      }
 }
