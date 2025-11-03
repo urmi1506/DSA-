@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class InorderIterative {
 
-    public class Node {
+    public static class Node {
         int data;
         Node left;
         Node right;
@@ -15,32 +15,31 @@ public class InorderIterative {
         }
     }
     
-    ArrayList<Integer> inOrder(Node node) {
+    static ArrayList<Integer> inOrder(Node node) {
         ArrayList<Integer> res = new ArrayList<>();
-        inOrderHelper(node, res);
+        helper(node, res);
         return res;
     }
 
-    private void inOrderHelper(Node node, ArrayList<Integer> res) {
+    private static void helper(Node node, ArrayList<Integer> res) {
         if (node == null) {
             return;
         }
 
-        inOrderHelper(node.left, res);
+        helper(node.left, res);
         res.add(node.data);
-        inOrderHelper(node.right, res);
+        helper(node.right, res);
     }
 
     public static void main(String[] args) {
-        InorderIterative tree = new InorderIterative();
-        Node root = tree.new Node(1);
-        root.left = tree.new Node(2);
-        root.right = tree.new Node(3);
-        root.left.left = tree.new Node(4);
-        root.left.right = tree.new Node(5);
+        Node root = new Node(1);
+        root.left = new Node(2);
+        root.right = new Node(3);
+        root.left.left = new Node(4);
+        root.left.right = new Node(5);
 
-        ArrayList<Integer> inOrderResult = tree.inOrder(root);
+        ArrayList<Integer> Res = inOrder(root);
 
-        System.out.println(inOrderResult);
+        System.out.println(Res);
     }
 }
