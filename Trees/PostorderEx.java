@@ -10,9 +10,11 @@ public class PostorderEx {
     }
     // Recursive - Postorder
     static void postorder(Node node){
+        // Base Case
         if(node==null){
             return;
         }
+        // Left, Right, Root
         postorder(node.left);
         postorder(node.right);
         System.out.println(node.data);
