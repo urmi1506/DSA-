@@ -9,9 +9,11 @@ public class PreorderEx {
     }
     // Recursive Preorder
     static void preorder(Node node){
+         // Base Case
        if(node==null){
         return;
        }
+         // Root, Left, Right
        System.out.println(node.data);
        preorder(node.left);
        preorder(node.right);
