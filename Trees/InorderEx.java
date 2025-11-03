@@ -8,7 +8,7 @@ public class InorderEx {
             data=key;
         }
     }
-    // Recursive Inorder
+    // Recursive Inorder (Left, Root, Right)
     static void inorder(Node node){
         if(node==null){
             return;
