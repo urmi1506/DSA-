@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class PreorderIterative {
 
-    class Node {
+    static class Node {
         int data;
         Node left;
         Node right;
@@ -15,29 +15,29 @@ public class PreorderIterative {
         }
     }
 
-    ArrayList<Integer> preOrder(Node node) {
+     ArrayList<Integer> preOrder(Node node) {
         ArrayList<Integer> res = new ArrayList<>();
-        preOrderHelper(node, res);
+        helper(node, res);
         return res;
     }
 
-    private void preOrderHelper(Node node, ArrayList<Integer> res) {
+    private  void helper(Node node, ArrayList<Integer> res) {
         if (node == null) {
             return;
         }
 
         res.add(node.data);
-        preOrderHelper(node.left, res);
-        preOrderHelper(node.right, res);
+        helper(node.left, res);
+        helper(node.right, res);
     }
 
     public static void main(String[] args) {
         PreorderIterative tree = new PreorderIterative();
-        Node root = tree.new Node(1);
-        root.left = tree.new Node(2);
-        root.right = tree.new Node(3);
-        root.left.left = tree.new Node(4);
-        root.left.right = tree.new Node(5);
+        Node root = new Node(1);
+        root.left = new Node(2);
+        root.right = new Node(3);
+        root.left.left = new Node(4);
+        root.left.right = new Node(5);
 
         ArrayList<Integer> preOrderResult = tree.preOrder(root);
 
