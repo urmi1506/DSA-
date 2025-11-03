@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class PostorderIterative {
 
-    class Node {
+    static class Node {
         int data;
         Node left;
         Node right;
@@ -15,32 +15,32 @@ public class PostorderIterative {
         }
     }
 
-    ArrayList<Integer> postOrder(Node node) {
+    static ArrayList<Integer> postOrder(Node node) {
         ArrayList<Integer> res = new ArrayList<>();
-        postOrderhelper(node, res);
+        helper(node, res);
         return res;
     }
 
-    private void postOrderhelper(Node node, ArrayList<Integer> res) {
+    private static void helper(Node node, ArrayList<Integer> res) {
+        // Base Case
         if (node == null) {
             return;
         }
-
-        postOrderhelper(node.left, res);
-        postOrderhelper(node.right, res);
+        // Left, Right, Root
+        helper(node.left, res);
+        helper(node.right, res);
         res.add(node.data);
     }
 
     public static void main(String[] args) {
-        PostorderIterative tree = new PostorderIterative();
-        Node root = tree.new Node(1);
-        root.left = tree.new Node(2);
-        root.right = tree.new Node(3);
-        root.left.left = tree.new Node(4);
-        root.left.right = tree.new Node(5);
+        Node root = new Node(1);
+        root.left = new Node(2);
+        root.right = new Node(3);
+        root.left.left = new Node(4);
+        root.left.right = new Node(5);
 
-        ArrayList<Integer> postOrderResult = tree.postOrder(root);
+        ArrayList<Integer> Res = postOrder(root);
 
-        System.out.println(postOrderResult);
+        System.out.println(Res);
     }
 }
