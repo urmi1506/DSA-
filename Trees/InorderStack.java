@@ -20,7 +20,9 @@ public class InorderStack {
      public static List<Integer> inorderTraversal(TreeNode root){
         List<Integer> inorder=new ArrayList<>();
         Stack<TreeNode> s=new Stack<>();
+
         TreeNode node=root;
+        //Ledt Root Right
         while(true){
             if(node!= null){
                 s.push(node);
