@@ -2,6 +2,7 @@ package Easy;
 
 import java.util.ArrayList;
 
+//Intersection Array
 public class Intersection {
     public static int[] intersection(int[] nums1, int[] nums2) {
         ArrayList <Integer> list =new ArrayList<>();
