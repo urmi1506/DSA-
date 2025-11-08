@@ -12,7 +12,7 @@ public class TwoSum2 {
         HashMap <Integer,Integer> map =new HashMap<>();
         for (int i = 0; i < nums.length; i++) {
             int num =nums[i];
-            // cal MoreNeeded To reach target
+            // calculate MoreNeeded To reach target
             int moreNeeded = target - num;
             if (map.containsKey(moreNeeded)){
                 ans[0] =map.get(moreNeeded);
