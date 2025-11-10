@@ -8,11 +8,12 @@ public class kLargestElements {
         for(int num:nums){
             minHeap.add(num);
             if(minHeap.size()>k){
+                // remove smallest element 
                 minHeap.poll();
             }
         }
         while (minHeap.size()>0) {
-            System.out.print(minHeap.poll()+" ");
+            System.out.print(minHeap.poll());
             
         }
     }
