@@ -7,7 +7,7 @@ public class SubsetSum {
         return print(arr , 0 , arr.length , new ArrayList<>() , target);
     }
     private static boolean print(int [] arr ,int indx ,int n ,List<Integer> ans ,int target){
-        // compute curr sum
+        // compute current sum
         int sum =0 ;
         for (int x : ans) sum += x;
         if(sum == target) return true;
