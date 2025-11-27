@@ -6,6 +6,7 @@ import java.util.List;
 public class SubsetDuplicate {
 
     public static List<List<Integer>> subsetwithDupl(int[] nums) {
+        // sort for handle duplicates
         Arrays.sort(nums);
         List<List<Integer>> ans = new ArrayList<>();
         List<Integer> temp = new ArrayList<>();
@@ -15,16 +16,19 @@ public class SubsetDuplicate {
     }
 
     private static void helper(int[] nums, int idx, List<Integer> temp, List<List<Integer>> ans) {
+        // add curr subset
         ans.add(new ArrayList<>(temp));
 
+        //Logic for include and exclude ..for choice
         for (int i = idx; i < nums.length; i++) {
-
+            //Skip Duplicate
             if (i > idx && nums[i] == nums[i - 1]) continue; 
-
+            
+            // include
             temp.add(nums[i]);
-
+            
             helper(nums, i + 1, temp, ans); 
-
+            // backtrack
             temp.remove(temp.size() - 1);
         }
     }
