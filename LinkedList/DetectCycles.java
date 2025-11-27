@@ -9,8 +9,10 @@ class ListNode{
     }
 public class DetectCycles {
     public static boolean hasCycle(ListNode head) {
+        // Floyd Algorithm
         ListNode slow=head;
         ListNode fast=head;
+        // Detect cycle logic
         while(fast!=null && fast.next!=null){
             slow=slow.next;
             fast=fast.next.next;
