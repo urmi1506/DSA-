@@ -18,6 +18,8 @@ public class SubsetSum {
         // include 
         ans.add(arr[indx]);
         if(print(arr, indx+1, n, ans, target)) return true;
+        
+        // backtrack
         ans.remove(ans.size()-1);
 
         // exclude
