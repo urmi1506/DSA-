@@ -6,7 +6,7 @@ import java.util.List;
 public class ComboSum2 {
     public static void main(String[] args) {
         int[] candidates = {10,1,2,7,6,1,5}; 
-        int target = 8;
+        int target = 9;
         System.out.println(combinationSum2( candidates,  target));
     }
     private static List<List<Integer>> res = new ArrayList<>(); 
