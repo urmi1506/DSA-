@@ -5,7 +5,6 @@ import java.util.PriorityQueue;
 
 public class FreqSort {
     public static int[] topKFrequent(int[] nums){
-        int n=nums.length;
         Map<Integer,Integer> freq = new java.util.HashMap<>();
         for(int num : nums){
             freq.put(num,freq.getOrDefault(num,0)+1);
