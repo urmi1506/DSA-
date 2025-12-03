@@ -5,7 +5,7 @@ import java.util.List;
 
 public class ComboSum3 {
     public static void main(String[] args) {
-        int k=3 ;
+        int k=4 ;
         int n=7 ;
         System.out.println( combinationSum3( k,  n));
     }
