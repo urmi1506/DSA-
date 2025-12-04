@@ -1,38 +1,8 @@
 package LinkedList;
 
+import java.util.ArrayList;
+
 public class RevLinkedList {
-    public static void main(String[] args) {
-        int[] values = {10};
-        Node head = constructLL(values);
-        Solution solution = new Solution();
-        Node reversedHead = solution.reverseList(head);
-        printLinkedList(reversedHead);
-    }
-
-    static Node constructLL(int[] values) {
-        if (values.length == 0) {
-            return null;
-        }
-        Node head = new Node(values[0]);
-        Node temp = head;
-
-        for (int i = 1; i < values.length; i++) {
-            temp.next = new Node(values[i]);
-            temp = temp.next;
-        }
-
-        return head;
-    }
-
-    static void printLinkedList(Node head) {
-        Node temp = head;
-        while (temp != null) {
-            System.out.print(temp.data + " ");
-            temp = temp.next;
-        }
-        System.out.println();
-    }
-
     static class Node {
         int data;
         Node next;
@@ -42,20 +12,56 @@ public class RevLinkedList {
             this.next = null;
         }
     }
+    static Node reverseList(Node head) {
+       //    Base Case
+        if(head == null || head.next == null) return head;
 
-    static class Solution {
-        Node reverseList(Node head) {
-            Node current = head;
-            Node previous = null;
+        //1.store data
+        ArrayList <Node> list =new ArrayList<>();
+        Node temp =head;
 
-            while (current != null) {
-                Node next = current.next;
-                current.next = previous;
-                previous = current;
-                current = next;
-            }
-
-            return previous;
+        while(temp != null ){
+            list.add(temp);
+            temp=temp.next;
         }
+
+        //2.reverse by swapping
+        int s=0;
+        int e =list.size()-1;
+
+        while(s < e){
+            int t1 = list.get(s).data;
+            list.get(s).data=list.get(e).data;
+            list.get(e).data =t1;
+
+            s++;
+            e--;
+
+        }
+    return head;
     }
+    
+    
+    static void printLinkedList(Node head) {
+        Node temp = head;
+        while (temp != null) {
+            System.out.print(temp.data + " ");
+            temp = temp.next;
+        }
+        System.out.println();
+    }
+    
+    public static void main(String[] args) {
+        Node  head =new Node(1);
+        head.next = new Node(2);
+        head.next.next=new Node(3);
+        head.next.next.next=new Node(4);
+        head.next.next.next.next= new Node(5);
+
+        Node reverse= reverseList(head);
+
+        printLinkedList(reverse);
+    }
+
+    
 }
