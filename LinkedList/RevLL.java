@@ -1,10 +1,11 @@
 package LinkedList;
-class ListNode {
+    class ListNode {
       int val;
       ListNode next;
-      ListNode() {}
-      ListNode(int val) { this.val = val; }
-      ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+      ListNode(int val) { 
+        this.val = val; 
+        this.next = null; 
+    }
   }
 public class RevLL {
     public static ListNode reverseList(ListNode head) {
