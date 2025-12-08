@@ -8,7 +8,6 @@ class ListNode {
         this.next = null;
     }
 }
-// GM
 
 public class AddTwoNo {
     public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
