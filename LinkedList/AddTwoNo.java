@@ -12,26 +12,31 @@ class ListNode {
 
 public class AddTwoNo {
     public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+        //Initialized dummy node
         ListNode dummy = new ListNode(0);
         ListNode curr = dummy;
 
         int carry = 0;
-
+        //Treverse both list
         while (l1 != null || l2 != null) {
+            //Extract digit
             int val1 = (l1 != null) ? l1.val : 0; 
             int val2 = (l2 != null) ? l2.val : 0;
-
+            
+            //compute sum
             int sum = val1 + val2 + carry;
+            //compute carry
             carry = sum / 10;  
             int digit = sum % 10; 
-
+            
+            //create new node to store digit
             curr.next = new ListNode(digit); 
             curr = curr.next;
 
             if (l1 != null) l1 = l1.next;
             if (l2 != null) l2 = l2.next;
         }
-
+        //append remaining carry
         if (carry > 0) {
             curr.next = new ListNode(carry);
         }
