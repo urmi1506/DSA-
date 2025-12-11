@@ -46,7 +46,7 @@ public class RemoveNEnd {
         ListNode res = removeNthFromEnd(head, 2);
 
         while (res != null) {
-            System.out.print(res.val +"--->");
+            System.out.print(res.val +"-->");
             res=res.next;
         }
     }
