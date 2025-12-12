@@ -10,7 +10,8 @@ public class MergeTwoSortArr {
         if (n % 2 != 0) { 
             // odd
             return merged[n / 2];
-        } else { // even
+        } else { 
+            // even
             return (merged[n / 2 - 1] + merged[n / 2]) / 2.0;
         }
     }
