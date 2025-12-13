@@ -6,6 +6,76 @@
     "configurations": [
         {
             "type": "java",
+            "name": "LenLongestSubstr",
+            "request": "launch",
+            "mainClass": "String.LenLongestSubstr",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "DeletedNode",
+            "request": "launch",
+            "mainClass": "LinkedList.DeletedNode",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "RemoveNEnd",
+            "request": "launch",
+            "mainClass": "LinkedList.RemoveNEnd",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "RemoveEnd",
+            "request": "launch",
+            "mainClass": "LinkedList.RemoveEnd",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "SubsetDuplicate",
+            "request": "launch",
+            "mainClass": "Recursion.SubsetDuplicate",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "SubsetSum",
+            "request": "launch",
+            "mainClass": "Recursion.SubsetSum",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "printBasic",
+            "request": "launch",
+            "mainClass": "Recursion.printBasic",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "PalindromeLL",
+            "request": "launch",
+            "mainClass": "LinkedList.PalindromeLL",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "BottomTreeView",
+            "request": "launch",
+            "mainClass": "Trees.BottomTreeView",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "TopView",
+            "request": "launch",
+            "mainClass": "Trees.TopView",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
             "name": "TrappingRainWater",
             "request": "launch",
             "mainClass": "Graph.TrappingRainWater",
