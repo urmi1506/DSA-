@@ -23,7 +23,7 @@ public class BFS {
         }
         // initially add root to queue
         queue.offer(root);
-        // main loop
+        
         while(!queue.isEmpty()){
             // get size of current level
             int levelNum=queue.size();
