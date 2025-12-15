@@ -21,7 +21,9 @@ public class RightViewBT {
     }
     public static void rightView(Node curr , List<Integer> res , int currLevel){
         if(curr == null) return;
-
+        
+        //Root -- right -- left
+        // level matched size
         if(currLevel == res.size()) res.add(curr.data);
 
         rightView(curr.right , res ,currLevel + 1);
