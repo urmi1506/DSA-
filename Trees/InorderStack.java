@@ -22,17 +22,24 @@ public class InorderStack {
         Stack<TreeNode> s=new Stack<>();
 
         TreeNode node=root;
-        //Ledt Root Right
+        //Left Root Right
+        // true = node! null || !s.isEmpty()
         while(true){
             if(node!= null){
+                // push data to stack
                 s.push(node);
+                // check left
                 node=node.left;
             }else{ 
+                // stack empty ..break
                 if(s.isEmpty()){
                  break;
             }
+            // pop data
             node=s.pop();
+            // add root node
             inorder.add(node.data);
+            // check right
             node=node.right;
           }
         }
