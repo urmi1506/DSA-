@@ -5,15 +5,15 @@ import java.util.List;
 import java.util.Stack;
 
 public class PreorderStack {
-    class TreeNode {
+    static class TreeNode {
         int data;
         TreeNode left;
         TreeNode right;
         
         TreeNode(int data) {
             this.data = data;
-            this.left = null;
-            this.right = null;
+            left = null;
+            right = null;
         }
         
     }
@@ -37,12 +37,11 @@ public class PreorderStack {
     return preorder;
     }
     public static void main(String[] args) {
-        PreorderStack tree = new PreorderStack();
-        TreeNode root = tree.new TreeNode(1);
-        root.left = tree.new TreeNode(2);
-        root.right = tree.new TreeNode(3);
-        root.left.left = tree.new TreeNode(4);
-        root.left.right = tree.new TreeNode(5);
+        TreeNode root = new TreeNode(1);
+        root.left = new TreeNode(2);
+        root.right = new TreeNode(3);
+        root.left.left = new TreeNode(4);
+        root.left.right = new TreeNode(5);
 
         List<Integer> Res = preorderTraversal(root);
 
