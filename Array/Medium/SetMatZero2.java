@@ -5,8 +5,10 @@ public class SetMatZero2 {
     public static void setZeroes(int[][] matrix) {
         int n=matrix.length;
         int m=matrix[0].length;
+        // array to track which row/col need to mark zero
         int[] markRow = new int[n];
         int[] markCol = new int[m];
+         // traverse matrix to find zero
         for(int row=0; row<n; row++){
             for(int col=0; col<m; col++){
                 if(matrix[row][col]==0){
@@ -15,6 +17,7 @@ public class SetMatZero2 {
                 }
             }
         }
+        // traverse matrix to find one and mark as zero
         for(int row=0; row<n; row++){
             for(int col=0; col<m; col++){
                 if(markRow[row]==1 || markCol[col]==1){
