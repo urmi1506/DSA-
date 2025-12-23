@@ -22,7 +22,7 @@ public class MaxHeight {
         //check right height
         int rh =maxDepth(root.right);
 
-    return 1+Math.max(lh, rh);
+    return Math.max(lh, rh)+1;
 
     }
     public static void main(String[] args) {
