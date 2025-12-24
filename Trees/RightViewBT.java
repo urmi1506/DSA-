@@ -16,8 +16,8 @@ public class RightViewBT {
     public static List<Integer> rightSideView(Node root) {
         List<Integer> res =new ArrayList<>();
         rightView(root , res , 0);
-    return res;
         
+    return res;        
     }
     public static void rightView(Node curr , List<Integer> res , int currLevel){
         if(curr == null) return;
