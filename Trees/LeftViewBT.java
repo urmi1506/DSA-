@@ -19,16 +19,16 @@ public class LeftViewBT {
         return res;
     }
 
-    private static void leftViewHelper(Node currNode, ArrayList<Integer> res, int currDepth) {
+    private static void leftViewHelper(Node currNode, ArrayList<Integer> res, int currlevel) {
         if (currNode == null)
             return;
         // Root -- left -- right
-        if (currDepth == res.size()) {
+        if (currlevel == res.size()) {
             res.add(currNode.data);
         }
 
-        leftViewHelper(currNode.left, res, currDepth + 1);
-        leftViewHelper(currNode.right, res, currDepth + 1);
+        leftViewHelper(currNode.left, res, currlevel + 1);
+        leftViewHelper(currNode.right, res, currlevel + 1);
     }
 
     public static void main(String[] args) {
