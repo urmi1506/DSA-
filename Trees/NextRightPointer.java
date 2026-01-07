@@ -52,7 +52,6 @@ public class NextRightPointer {
         while (curr != null) {
             System.out.print(curr.data + " -> ");
 
-            // find start of next level
             if (levelStart == null) {
                 if (curr.left != null) levelStart = curr.left;
                 else if (curr.right != null) levelStart = curr.right;
