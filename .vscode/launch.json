@@ -6,6 +6,174 @@
     "configurations": [
         {
             "type": "java",
+            "name": "NextRightPtr",
+            "request": "launch",
+            "mainClass": "Trees.NextRightPtr",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "NextRightPointer",
+            "request": "launch",
+            "mainClass": "Trees.NextRightPointer",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "LCAofBST",
+            "request": "launch",
+            "mainClass": "Trees.LCAofBST",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "ValidateBST",
+            "request": "launch",
+            "mainClass": "Trees.ValidateBST",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "ChildSum",
+            "request": "launch",
+            "mainClass": "Trees.ChildSum",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "FlattenBinaryTree",
+            "request": "launch",
+            "mainClass": "Trees.FlattenBinaryTree",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "FlattenBT",
+            "request": "launch",
+            "mainClass": "Trees.FlattenBT",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "MinDepthBT",
+            "request": "launch",
+            "mainClass": "Trees.MinDepthBT",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "RepeateNo",
+            "request": "launch",
+            "mainClass": "Easy.RepeateNo",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "SymmetryBT",
+            "request": "launch",
+            "mainClass": "Trees.SymmetryBT",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "MagicSquare",
+            "request": "launch",
+            "mainClass": "Matrix.MagicSquare",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "LCAOfBT",
+            "request": "launch",
+            "mainClass": "Trees.LCAOfBT",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "SearchBST",
+            "request": "launch",
+            "mainClass": "Trees.SearchBST",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "IdenticalTree",
+            "request": "launch",
+            "mainClass": "Trees.IdenticalTree",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "VerticalOrder",
+            "request": "launch",
+            "mainClass": "Trees.VerticalOrder",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "BalancedBT",
+            "request": "launch",
+            "mainClass": "Trees.BalancedBT",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "BalancedTree",
+            "request": "launch",
+            "mainClass": "Trees.BalancedTree",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "ZigzagOrderBT",
+            "request": "launch",
+            "mainClass": "Trees.ZigzagOrderBT",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "MaxWidth",
+            "request": "launch",
+            "mainClass": "Trees.MaxWidth",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "DiameterBT",
+            "request": "launch",
+            "mainClass": "Trees.DiameterBT",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "RightViewBT",
+            "request": "launch",
+            "mainClass": "Trees.RightViewBT",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "MissingNumber",
+            "request": "launch",
+            "mainClass": "Easy.MissingNumber",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "LevelOrder",
+            "request": "launch",
+            "mainClass": "Trees.LevelOrder",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "MaxHeight",
+            "request": "launch",
+            "mainClass": "Trees.MaxHeight",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
             "name": "LenLongestSubstr",
             "request": "launch",
             "mainClass": "String.LenLongestSubstr",
