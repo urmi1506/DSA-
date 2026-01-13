@@ -12,11 +12,12 @@ public class BoundaryTraversal {
             left = right = null;
         }
     }
-    
+
     static ArrayList<Integer> l = new ArrayList<>();
 
     static ArrayList<Integer> boundaryTraversal(Node root) {
-        if (root == null) return l;
+        if (root == null)
+            return l;
 
         if (root.left == null && root.right == null) {
             l.add(root.data);
@@ -39,8 +40,10 @@ public class BoundaryTraversal {
     }
 
     static void findleft(Node root) {
-        if (root == null) return;
-        if (root.left == null && root.right == null) return;
+        if (root == null)
+            return;
+        if (root.left == null && root.right == null)
+            return;
 
         l.add(root.data);
 
@@ -52,7 +55,8 @@ public class BoundaryTraversal {
     }
 
     static void leafNode(Node root) {
-        if (root == null) return;
+        if (root == null)
+            return;
 
         if (root.left == null && root.right == null) {
             l.add(root.data);
@@ -62,10 +66,12 @@ public class BoundaryTraversal {
         leafNode(root.left);
         leafNode(root.right);
     }
-    
+
     static void findright(Node root) {
-        if (root == null) return;
-        if (root.left == null && root.right == null) return;
+        if (root == null)
+            return;
+        if (root.left == null && root.right == null)
+            return;
 
         if (root.right != null) {
             findright(root.right);
