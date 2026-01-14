@@ -14,7 +14,7 @@ public class BoundaryTraversal {
     }
 
     static ArrayList<Integer> l = new ArrayList<>();
-
+    //Left -- Leaf Node -- Right 
     static ArrayList<Integer> boundaryTraversal(Node root) {
         if (root == null)
             return l;
