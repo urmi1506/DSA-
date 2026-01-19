@@ -6,6 +6,97 @@
     "configurations": [
         {
             "type": "java",
+            "name": "PreSucc",
+            "request": "launch",
+            "mainClass": "Trees.PreSucc",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "ConstructBST",
+            "request": "launch",
+            "mainClass": "Trees.ConstructBST",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "BuildBST",
+            "request": "launch",
+            "mainClass": "Trees.BuildBST",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "ConvertBST",
+            "request": "launch",
+            "mainClass": "Trees.ConvertBST",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "ConstructBinaryTree",
+            "request": "launch",
+            "mainClass": "Trees.ConstructBinaryTree",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "ConstructBT",
+            "request": "launch",
+            "mainClass": "Trees.ConstructBT",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "BoundaryTraversal",
+            "request": "launch",
+            "mainClass": "Trees.BoundaryTraversal",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "TwoSum",
+            "request": "launch",
+            "mainClass": "Trees.TwoSum",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "KthLargestBST",
+            "request": "launch",
+            "mainClass": "Trees.KthLargestBST",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "KthSmallestBST",
+            "request": "launch",
+            "mainClass": "Trees.KthSmallestBST",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "CeilBST",
+            "request": "launch",
+            "mainClass": "Trees.CeilBST",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "FloorBST",
+            "request": "launch",
+            "mainClass": "Trees.FloorBST",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
+            "name": "RootToLeaf",
+            "request": "launch",
+            "mainClass": "Trees.RootToLeaf",
+            "projectName": "DSA-_b92565f0"
+        },
+        {
+            "type": "java",
             "name": "NextRightPtr",
             "request": "launch",
             "mainClass": "Trees.NextRightPtr",
