@@ -40,7 +40,7 @@ public class BFS {
         adj.get(3).addAll(Arrays.asList(0));
         adj.get(4).addAll(Arrays.asList(2));
 
-        ArrayList<Integer> res = bfs(adj);
-        System.out.println(res);
+        ArrayList<Integer> ans = bfs(adj);
+        System.out.println(ans);
     }
 }
