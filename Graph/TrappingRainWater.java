@@ -9,7 +9,7 @@ public class TrappingRainWater{
         PriorityQueue<int[]> pq = new PriorityQueue<>((a, b) -> a[0] - b[0]);
         boolean[][] vis = new boolean[n][m];
 
-        // Add first and last column
+        // Add first & last column
         for (int i = 0; i < n; i++) {
             vis[i][0] = true;
             vis[i][m - 1] = true;
