@@ -42,7 +42,7 @@ public class MinCost {
                 }
             }
     
-            return minCost[m-1][n-1];
+        return minCost[m-1][n-1];
         }
     public static void main(String[] args) {
         int[][]grid = {{1,2},{4,3}};
