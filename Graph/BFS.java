@@ -13,10 +13,10 @@ public class BFS {
         visited[0] = true;
 
         while (!q.isEmpty()) {
-            int pop = q.poll();
-            traversal.add(pop);
+            int node = q.poll();
+            traversal.add(node);
 
-            for (int curr : adj.get(pop)) {
+            for (int curr : adj.get(node)) {
                 if (!visited[curr]) { 
                     q.add(curr);
                     visited[curr] = true;
