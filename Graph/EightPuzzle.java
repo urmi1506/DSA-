@@ -58,7 +58,7 @@ public class EightPuzzle {
             }
         }
 
-        return "No solution found.";
+        return "No solution found";
     }
 
     public static void main(String[] args) {
