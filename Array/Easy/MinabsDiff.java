@@ -5,8 +5,8 @@ import java.util.*;
 public class MinabsDiff {
 
     public static List<List<Integer>> minimumAbsDifference(int[] arr) {
-        Arrays.sort(arr);
         int n = arr.length;
+        Arrays.sort(arr);
         int minDiff = Integer.MAX_VALUE;
         List<List<Integer>> res = new ArrayList<>();
 
