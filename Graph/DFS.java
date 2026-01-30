@@ -1,6 +1,5 @@
 package Graph;
-import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.*;
 
 public class DFS {
     static void dfsRec(ArrayList<ArrayList<Integer>> adj,
