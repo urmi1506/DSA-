@@ -42,7 +42,7 @@ public class TargetNodes{
         int k = 2;
         int[]res =maxTargetNodes( edges1, edges2, k);
         for (int ans : res) {
-            System.out.println(ans);
+            System.out.println (ans);
         }
     }
 }
