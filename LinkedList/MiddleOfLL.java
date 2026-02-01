@@ -12,7 +12,7 @@ class ListNode {
 
 public class MiddleOfLL {
     public static ListNode middleNode(ListNode head) {
-        // base case
+        
         if (head == null || head.next == null)
             return head;
 
