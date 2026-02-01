@@ -13,10 +13,10 @@ public class RevLinkedList {
         }
     }
     static Node reverseList(Node head) {
-       //    Base Case
+       //Base Case
         if(head == null || head.next == null) return head;
 
-        //1.store data
+        //store data
         ArrayList <Node> list =new ArrayList<>();
         Node temp =head;
 
@@ -25,7 +25,7 @@ public class RevLinkedList {
             temp=temp.next;
         }
 
-        //2.reverse by swapping
+        //reverse by swapping
         int s=0;
         int e =list.size()-1;
 
