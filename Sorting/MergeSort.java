@@ -4,7 +4,6 @@ public class MergeSort {
     public static void mergeSort(int []nums,int low,int high ){
         int mid=low+(high-low)/2;
 
-        // base case
         if(low >= high) return;
         mergeSort(nums,low,mid);
         mergeSort(nums, mid+1, high);
