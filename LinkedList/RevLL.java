@@ -10,6 +10,7 @@ package LinkedList;
 public class RevLL {
     public static ListNode reverseList(ListNode head) {
         ListNode prev=null ,curr=head ,next=null;
+        
         while(curr != null){
             next=curr.next;
             curr.next=prev;
