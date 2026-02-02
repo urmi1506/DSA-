@@ -2,7 +2,7 @@ package Sorting;
 
 public class MergeTwoSortArr {
     public static double findMedianSortedArrays(int[] nums1, int[] nums2) {
-        // Merge the two arrays first
+        
         int[] merged = mergeArrays(nums1, nums2);
         int n = merged.length;
 
