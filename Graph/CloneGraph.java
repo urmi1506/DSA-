@@ -70,10 +70,7 @@ public class CloneGraph {
 
         Node cloned = cloneGraph(n1);
 
-        System.out.println("Original node val: " + n1.val);
-        System.out.println("Cloned node val: " + cloned.val);
-        System.out.println("Same reference? " + (n1 == cloned));
-        System.out.println("Original neighbors count: " + n1.neighbors.size());
-        System.out.println("Cloned neighbors count: " + cloned.neighbors.size());
+        System.out.println(cloned);
+        
     }
 }
