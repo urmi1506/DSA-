@@ -26,7 +26,7 @@ public class CloneGraph {
         }
     }
 
-    // map to store original -> clone
+    // map to store original
     static Map<Node, Node> map = new HashMap<>();
 
     public static Node cloneGraph(Node node) {
