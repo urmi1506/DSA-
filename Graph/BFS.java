@@ -4,7 +4,7 @@ import java.util.*;
 
 public class BFS {
     public static ArrayList<Integer> bfs(ArrayList<ArrayList<Integer>> adj) {
-        ArrayList<Integer> traversal = new ArrayList<>();
+        ArrayList<Integer> res = new ArrayList<>();
         Queue<Integer> q = new LinkedList<>();
         int size = adj.size();
         boolean[] visited = new boolean[size];
@@ -14,7 +14,7 @@ public class BFS {
 
         while (!q.isEmpty()) {
             int node = q.poll();
-            traversal.add(node);
+            res.add(node);
 
             for (int curr : adj.get(node)) {
                 if (!visited[curr]) { 
@@ -23,7 +23,7 @@ public class BFS {
                 }
             }
         }
-        return traversal;
+        return res;
     }
 
     public static void main(String[] args) {
