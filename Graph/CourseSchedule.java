@@ -37,11 +37,11 @@ public class CourseSchedule {
         }
 
         // Step 3: BFS (Topological Sort)
-        int count = 0;
+        int cnt = 0;
 
         while (!q.isEmpty()) {
             int node = q.poll();
-            count++;
+            cnt++;
 
             for (int it : adj.get(node)) {
                 indegree[it]--;
@@ -51,7 +51,7 @@ public class CourseSchedule {
             }
         }
 
-        return count == numCourses;
+        return cnt == numCourses;
     }
   
   public static void main(String[] args) {
