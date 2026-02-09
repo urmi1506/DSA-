@@ -13,7 +13,7 @@ public class CourseSchedule {
             adj.add(new ArrayList<>());
         }
 
-        // Build the graph (b -> a)
+        // Build the graph 
         for (int i = 0; i < prerequisites.length; i++) {
             int a = prerequisites[i][0];
             int b = prerequisites[i][1];
