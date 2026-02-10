@@ -25,8 +25,7 @@ public class minBus {
                 for (int j_Edges = 0; j_Edges < arr_Edges.length; j_Edges++) {
                     Edges[i_Edges][j_Edges] = Integer.parseInt(arr_Edges[j_Edges]);
                 }
-            }
-            
+            }           
             int out_ = solve(N, Passengers, Edges);
             System.out.println(out_);
         }
