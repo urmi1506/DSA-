@@ -27,7 +27,7 @@ public class ValidParentheses {
                 }
             }
         }
-        // 
+        
         // return s.isEmpty();
         if(s.isEmpty()){
             return true;
