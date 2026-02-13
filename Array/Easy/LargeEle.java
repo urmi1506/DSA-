@@ -2,13 +2,13 @@ package Easy;
 public class LargeEle {
     public static int largestElement(int[] nums) {
         int n = nums.length;
-        int max_ele = nums[0];
+        int maxi = nums[0];
         for(int i =1 ; i < n-1; i++){
-            if (nums[i] > nums [max_ele]){
-                max_ele= nums[i];
+            if (nums[i] > nums [maxi]){
+                maxi= nums[i];
             }
         }
-        return max_ele;
+        return maxi;
     }
     public static void main(String[] args) {
         int[] nums = {3, 3, 6, 1};
