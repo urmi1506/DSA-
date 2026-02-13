@@ -14,6 +14,12 @@ public class RightRotationD {
 
     public static void rotate(int[] nums, int k) {
         int n = nums.length;
+        // single /empty array
+        if(n<=1) return;
+
+        //k>n
+        k=k%n;
+        
         // reverse whole arr
         reverse(nums, 0, n - 1);
         // reverse first k part
