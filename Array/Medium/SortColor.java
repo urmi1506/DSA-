@@ -7,7 +7,7 @@ public class SortColor {
         int n=nums.length;
         int whitePointer=0, redPointer=0, bluePointer=n-1;
 
-        while(whitePointer <= redPointer){
+        while(whitePointer <= bluePointer){
             if(nums[whitePointer]==0){
                 int temp = nums[redPointer];
                 nums[redPointer]= nums [whitePointer];
@@ -24,6 +24,13 @@ public class SortColor {
                 nums[whitePointer]= temp;
                 bluePointer--;
             }
+        }
+    }
+    public static void main(String[] args) {
+        int nums[] ={2,0,2,1,1,0};
+        sortColors(nums);
+        for(int num : nums){
+            System.out.print(num +" ");
         }
     }
 }
