@@ -9,8 +9,7 @@ public class SearchLL {
         head.next.next.next = new Node(4);
 
         int key = 3;
-        Solution solution = new Solution();
-        boolean found = solution.searchKey(head, key);
+        boolean found = searchKey(head, key);
 
         if (found) {
             System.out.println("Key " + key + " found in the linked list.");
@@ -29,8 +28,7 @@ public class SearchLL {
         }
     }
 
-    static class Solution {
-        boolean searchKey(Node head, int key) {
+        static boolean searchKey(Node head, int key) {
             Node temp = head;
             while (temp != null) {
                 if (temp.data == key) {
@@ -41,4 +39,4 @@ public class SearchLL {
             return false;
         }
     }
-}
+
