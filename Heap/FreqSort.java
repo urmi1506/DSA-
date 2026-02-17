@@ -1,7 +1,6 @@
 package Heap;
 
-import java.util.Map;
-import java.util.PriorityQueue;
+import java.util.*;
 
 public class FreqSort {
     public static int[] topKFrequent(int[] nums){
