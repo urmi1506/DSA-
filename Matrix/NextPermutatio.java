@@ -3,6 +3,7 @@ package Matrix;
 public class NextPermutatio {
 public static void nextPermutation(int[] nums) {
         int n=nums.length;
+        
         // find break point
         int idx = -1;
         for(int i=n-2; i>=0; i--){
