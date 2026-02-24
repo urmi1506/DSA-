@@ -28,7 +28,7 @@ public class DeletedNode {
         deleteNode(head.next);
 
         while(head != null){
-            System.out.print("-->" + head.val);
+            System.out.print(" " + head.val);
             head =head.next;
         }
 
