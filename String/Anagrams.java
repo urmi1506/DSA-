@@ -24,6 +24,7 @@ public class Anagrams {
     }
 
     static ArrayList<ArrayList<String>> anagrams(String[] arr) {
+        
         ArrayList<ArrayList<String>> res = new ArrayList<>();
         Map<String, Integer> mp = new HashMap<>();
 
