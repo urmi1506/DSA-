@@ -42,10 +42,10 @@ public class ValidParentheses {
         String test4 = "([)]";
         String test5 = "{[]}";
 
-        System.out.println(isValid(test1)); // true
-        System.out.println(isValid(test2)); // true
-        System.out.println(isValid(test3)); // false
-        System.out.println(isValid(test4)); // false
-        System.out.println(isValid(test5)); // true
+        System.out.println(isValid(test1)); 
+        System.out.println(isValid(test2)); 
+        System.out.println(isValid(test3)); 
+        System.out.println(isValid(test4)); 
+        System.out.println(isValid(test5));
     }
 }
