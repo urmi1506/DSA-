@@ -5,26 +5,27 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.TreeMap;
 
-class Node {
-    int data;
-    Node left, right;
 
-    public Node(int item) {
-        data = item;
-        left = right = null;
-    }
-}
-class pair{
-    int pos;
-    Node node;
-    pair(int pos,Node node){
-        this.pos = pos;
-        this.node = node;
-    }
- }
- 
 public class BottomView {
-     public static ArrayList <Integer> bottomView(Node root)
+    static class pair{
+        int pos;
+        Node node;
+        pair(int pos,Node node){
+            this.pos = pos;
+            this.node = node;
+        }
+    }
+    
+    static class Node {
+        int data;
+        Node left, right;
+    
+        public Node(int item) {
+            data = item;
+            left = right = null;
+        }
+    }
+    public static ArrayList <Integer> bottomView(Node root)
     {
         TreeMap<Integer,Integer> map = new TreeMap<>();
         Queue<pair> queue = new LinkedList<>();
