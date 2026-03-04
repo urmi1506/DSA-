@@ -35,6 +35,7 @@ public class RightViewTree {
         Node root = new Node(1);
         root.left = new Node(3);
         root.right = new Node(2);
+        
         System.out.println(rightView(root));
     }
 }
