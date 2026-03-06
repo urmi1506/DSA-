@@ -27,7 +27,7 @@ public class PalindromeLinkedList {
     public static boolean isPalindrome(ListNode head) {
         if (head == null || head.next == null) return true;
 
-        // Find the middle (slow will be at mid)
+        // Find the middle
         ListNode slow = head, fast = head;
         while (fast != null && fast.next != null) {
             slow = slow.next;
