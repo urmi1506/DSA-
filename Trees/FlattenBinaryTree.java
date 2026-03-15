@@ -49,7 +49,7 @@ public class FlattenBinaryTree {
 
         TreeNode curr = root;
         while (curr != null) {
-            System.out.print(curr.val + "--> ");
+            System.out.print(curr.val + " ");
             curr = curr.right;
         }
 
