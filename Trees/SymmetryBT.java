@@ -4,7 +4,7 @@ public class SymmetryBT {
         return isMirror(root.left ,root.right);
     }
     private static boolean isMirror(TreeNode a ,TreeNode b){
-    // both node null
+       // both node null
        if(a == null && b == null) return true;
        //one node null
        if(a == null || b == null) return false;
