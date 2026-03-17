@@ -6,7 +6,16 @@ public class SumTree {
         int data;
         TreeNode left;
         TreeNode right;
-        
+        TreeNode() {
+            this.data = 0;
+            this.left = null;
+            this.right = null;
+        }
+        TreeNode(int data) {
+            this.data = data;
+            this.left = null;
+            this.right = null;
+        }
         TreeNode(int data, TreeNode left, TreeNode right) {
             this.data = data;
             this.left = left;
@@ -30,7 +39,7 @@ public class SumTree {
             if (root.right != null) stack1.push(root.right);
         }
 
-        // Stack2 now contains nodes in postorder.
+        // Stack 2 now contains nodes in postorder.
         while (!stack2.isEmpty()) {
             TreeNode node = stack2.pop();
 
