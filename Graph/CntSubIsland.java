@@ -2,8 +2,8 @@ package Graph;
 
 public class CntSubIsland {
 
-    static int m; // Number of rows in the grid
-    static int n; // Number of columns in the grid
+    static int m; 
+    static int n; 
 
     static boolean isSubIsland; // Flag to track if the current island in grid2 is a sub-island of grid1
 
