@@ -23,7 +23,6 @@ public class RightViewBT {
         if(curr == null) return;
         
         //Root -- right -- left
-        // level matched size
         if(currLevel == res.size()) res.add(curr.data);
 
         rightView(curr.right , res ,currLevel + 1);
