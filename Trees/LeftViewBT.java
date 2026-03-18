@@ -20,8 +20,7 @@ public class LeftViewBT {
     }
 
     private static void leftViewHelper(Node currNode, ArrayList<Integer> res, int currlevel) {
-        if (currNode == null)
-            return;
+        if (currNode == null)return;
         // Root -- left -- right
         if (currlevel == res.size()) {
             res.add(currNode.data);
