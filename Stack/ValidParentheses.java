@@ -3,6 +3,8 @@ import java.util.Stack;
 
 public class ValidParentheses {
     public static boolean isValid(String str) {
+        // Edge cases
+        if(str == null || str.length() == 0) return true;
         Stack<Character> s = new Stack<>();
         
         for (int i = 0; i < str.length(); i++) {
