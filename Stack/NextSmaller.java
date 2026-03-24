@@ -5,6 +5,7 @@ public class NextSmaller {
         int n= arr.length;
         int nextsmaller[]=new int[1001];
         Stack<Integer>st=new Stack<>();
+        
         //pop all greater elements
         for(int i =n-1; i>=0; i--){
             while(!st.isEmpty() && st.peek()>=arr[i]){
