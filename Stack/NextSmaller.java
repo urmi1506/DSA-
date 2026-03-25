@@ -25,7 +25,6 @@ public class NextSmaller {
     }
     public static void main(String[] args) {
         int []arr={4, 8, 5, 2, 25};
-        int n=arr.length;
         int []res=nextSmallerElements(arr);
         for (int i : res) {
             System.out.println(i);
