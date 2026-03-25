@@ -6,7 +6,7 @@ public class NextGreater {
     public static int[] nextGreaterElement(int[] nums1, int[] nums2) {
         int m=nums1.length;
         int n=nums2.length;
-        int[] nextGreater = new int[10001];
+        int[] nge = new int[10001];
         Stack<Integer> s = new Stack<>();
         // we want to find nextGreater right side of arr
         for (int i = n - 1; i >= 0; i--) {
@@ -14,14 +14,14 @@ public class NextGreater {
             while (!s.isEmpty() && s.peek() <= nums2[i]) {
                 s.pop();
             }
-            nextGreater[nums2[i]] = s.isEmpty() ? -1 : s.peek();
+            nge[nums2[i]] = s.isEmpty() ? -1 : s.peek();
             // push bcz it could be nextGreater for other element
             s.push(nums2[i]);
         }
         // copy ans in original array
 
         for (int i = 0; i < m; i++) {
-            nums1[i] = nextGreater[nums1[i]];
+            nums1[i] = nge[nums1[i]];
         }
 
         return nums1;
