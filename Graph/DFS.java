@@ -9,7 +9,7 @@ public class DFS {
         visited[s] = true;
         res.add(s);
 
-        
+        //check neighbours
         for (int i : adj.get(s)) {
             if (!visited[i]) {
                 dfsRec(adj, visited, i, res);
