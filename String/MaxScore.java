@@ -25,6 +25,7 @@ public class MaxScore {
         return maxScore;
     }
     public static void main(String[] args) {
+        
         String s = "011101";
         System.out.println(maxScore( s));
     }
