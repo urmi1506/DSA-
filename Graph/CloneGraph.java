@@ -29,7 +29,7 @@ public class CloneGraph {
     static Map<Node, Node> map = new HashMap<>();
 
     public static Node cloneGraph(Node node) {
-        // Base case
+        // Edge case
         if (node == null) return null;
 
         // Already cloned
