@@ -11,7 +11,7 @@ public class BFS {
         // store visited node
         boolean[] visited = new boolean[size];
         
-        // add initial node and mark it visited
+        // add initial node & mark it visited
         q.add(0);
         visited[0] = true;
         
