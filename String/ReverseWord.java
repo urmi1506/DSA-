@@ -2,7 +2,7 @@ package String;
 public class ReverseWord{
     public static String reverseWords(String s) {
         // Trim the string to remove leading & trailing spaces
-        // Split using "\\s+" to handle multiple spaces as a single separator
+        // Split using "\\s+" to handle multiple spaces as single separator
         String[] words = s.trim().split("\\s+");
         StringBuilder reversed = new StringBuilder();
 
