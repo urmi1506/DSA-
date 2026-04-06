@@ -3,7 +3,7 @@ import java.util.*;
 
 public class CloneGraph {
 
-    public static ArrayList neighbors;
+    public static ArrayList<Integer> neighbors;
 
     static class Node {
         public int val;
