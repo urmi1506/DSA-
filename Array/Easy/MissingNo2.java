@@ -5,7 +5,7 @@ public class MissingNo2 {
          int n = nums.length ;
         int xor1 = 0, xor2 = 0;
 
-        // XOR all arr ele
+        // XOR all arr elements
         for (int i = 0; i < n ; i++) {
             xor2 ^= nums[i];
         }
