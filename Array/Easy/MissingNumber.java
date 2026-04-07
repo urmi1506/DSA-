@@ -10,7 +10,8 @@ public class MissingNumber {
         if (nums[0] != 0) {
             return 0;
         }
-
+        
+        // check other missing no
         for (int i = 1; i < nums.length; i++) {
             if (nums[i] != nums[i - 1] + 1) {
                 return nums[i - 1] + 1;
