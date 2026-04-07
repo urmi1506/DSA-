@@ -4,7 +4,6 @@ import java.util.Arrays;
 
 public class MissingNumber {
     public static int missingNumber(int[] nums) {
-        int ans = 0;
         Arrays.sort(nums);
 
         // if 0 missing
@@ -14,8 +13,7 @@ public class MissingNumber {
 
         for (int i = 1; i < nums.length; i++) {
             if (nums[i] != nums[i - 1] + 1) {
-                ans = nums[i - 1] + 1;
-                return ans;
+                return nums[i - 1] + 1;
             }
         }
 
@@ -23,7 +21,7 @@ public class MissingNumber {
         return nums.length;
     }
     public static void main(String[] args) {
-        int []nums= {0,2,3};
+        int []nums= {0,1,2,3};
         int ans = missingNumber(nums);
         System.out.println(ans);
     }
