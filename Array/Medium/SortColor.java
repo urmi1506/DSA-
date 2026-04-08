@@ -5,24 +5,24 @@ package Medium;
 public class SortColor {
     public static void sortColors(int[] nums) {
         int n=nums.length;
-        int whitePointer=0, redPointer=0, bluePointer=n-1;
+        int whitePtr=0, redPtr=0, bluePtr=n-1;
 
-        while(whitePointer <= bluePointer){
-            if(nums[whitePointer]==0){
-                int temp = nums[redPointer];
-                nums[redPointer]= nums [whitePointer];
-                nums[whitePointer]= temp;
-                redPointer++;
-                whitePointer++;
+        while(whitePtr <= bluePtr){
+            if(nums[whitePtr]==0){
+                int temp = nums[redPtr];
+                nums[redPtr]= nums [whitePtr];
+                nums[whitePtr]= temp;
+                redPtr++;
+                whitePtr++;
             }
-            else if(nums[whitePointer]==1){
-                whitePointer++;
+            else if(nums[whitePtr]==1){
+                whitePtr++;
             }
             else{
-                int temp = nums[bluePointer];
-                nums[bluePointer]= nums [whitePointer];
-                nums[whitePointer]= temp;
-                bluePointer--;
+                int temp = nums[bluePtr];
+                nums[bluePtr]= nums [whitePtr];
+                nums[whitePtr]= temp;
+                bluePtr--;
             }
         }
     }
