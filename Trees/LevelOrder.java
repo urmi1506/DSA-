@@ -1,6 +1,5 @@
 package Trees;
 
-import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
@@ -14,38 +13,39 @@ class TreeNode{
 }
 public class LevelOrder {
     public static List<List<Integer>> levelorder(TreeNode root){
-        //initialize double list --store res
-        List<List<Integer>> list = new ArrayList<>();
-        //Edge case
-        if(root == null) return list;
-        
-        // queue & add root in it
-        Queue<TreeNode> q =  new LinkedList<TreeNode>();
-        q.offer(root);
+       // initialized double list --Store final ans
+        List<List<Integer>> result = new LinkedList<List<Integer>>();
+        // initialized queue --traverse level wise
+        Queue<TreeNode> queue = new LinkedList<TreeNode>();
 
+        // Edge case
+        if(root == null) return result;
 
-        //proceed upto its empty
-        while(!q.isEmpty()){
-            //initialize sublist to store level vise data
-            List<Integer> sublist = new ArrayList<Integer>();
+        // add root to queue
+        queue.offer(root);
 
-            // level size 
-            int k = q.size();
+        // Traverse 
+        while(!queue.isEmpty()){
+            // initialized sublist --store currlevel traversal
+            List<Integer> sublist = new LinkedList<>();
+            // check currlevel
+            int currLevel = queue.size();
 
-            //traverse upto curr level
-            for (int i = 0; i < k; i++) {
-                //pop node
-                TreeNode p = q.poll();
-                //add val
-                sublist.add(p.val);
-                //push childrens
-                if(p.left != null) q.offer(p.left);
-                if(p.right != null) q.offer(p.right);
+            // Traverse upto currlevel
+            for(int i=0; i<currLevel; i++){
+                // check left
+                if(queue.peek().left != null) queue.offer(queue.peek().left);
+                // check right
+                if(queue.peek().right != null) queue.offer(queue.peek().right);
+                //add data to sublist
+                sublist.add(queue.poll().val);
 
             }
-            list.add(sublist);
+            //add sublist to res
+            result.add(sublist);
+            
         }
-    return list;
+    return result;
     }
     public static void main(String[] args) {
         TreeNode root = new TreeNode(1);
