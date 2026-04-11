@@ -8,8 +8,10 @@ public class TwoSum2 {
         // Array to store ans
         int ans[] = new int[2];
         ans[0] =ans[1] = -1;
+
         // hashmap 
         HashMap <Integer,Integer> map =new HashMap<>();
+        
         for (int i = 0; i < nums.length; i++) {
             int num =nums[i];
             // calculate MoreNeeded To reach target
