@@ -5,6 +5,7 @@ import java.util.ArrayList;
 public class SpiralMatrix {
     public static ArrayList<Integer> spirallyTraverse(int mat[][]) {
        ArrayList<Integer> res = new ArrayList<>();
+       //Edge Cases
         if (mat == null || mat.length == 0) return res;
 
         int row = mat.length;
