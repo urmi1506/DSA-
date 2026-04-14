@@ -13,6 +13,7 @@ public class SelectionSort {
         
         // Find min element and then swap it
         for (int i = 0; i < n - 1; i++) {
+            // first ele --smallest(consider)
             int min = i;
             for (int j = i + 1; j < n; j++) {
                 if (arr[j] < arr[min]) {
