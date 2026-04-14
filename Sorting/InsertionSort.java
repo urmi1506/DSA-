@@ -12,21 +12,23 @@ public class InsertionSort {
     
         public static void insertionSort(int arr[], int n) {
             // Assume 1st element is already sorted
-            for (int i = 1; i < n ; i++) {
-                int temp=arr[i];
-                int j = i - 1;
-                for ( ;j >= 0; j--) {
-                    if (arr[j] > temp){
-                       arr[j+1]=arr[j];
-                    }
-                    else{
-                        break;
-                    }
-                }
-                arr[j+1]=temp;
-                
+           for(int i=1 ; i<n; i++){
+            //  curr ele
+            int key = arr[i];
+            // check left side
+            int j=i-1;
+
+            // if left ele bigger than curr 
+            while( j >= 0 && arr[j] > key) {
+                // shift right
+                arr[j + 1] = arr[j];
+                j--;
             }
+            // place it to curr pos
+            arr[j+1] = key;
+           }
         }
+        
     }
     
 
