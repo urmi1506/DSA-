@@ -1,8 +1,6 @@
 package Sorting;
 public class BubbleSortEx {
     
-	
-	// An optimized sol of Bubble Sort...whn array already sorted
 	static void bubbleSort(int arr[], int n)
 	{
 		int i, j, temp;
