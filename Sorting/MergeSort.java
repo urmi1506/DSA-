@@ -15,6 +15,7 @@ public class MergeSort {
         int left=low;
         int right=mid+1;
         int k=0;
+        
         while(left<=mid && right<=high){
             if(nums[left]<=nums[right]){
                 temp[k++]=nums[left++];
