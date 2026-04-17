@@ -14,7 +14,7 @@ public class ReverseNo {
         return rev;
     }
     public static void main(String[] args) {
-        int x=123;
+        int x=120;
         System.out.println(reverse(x));
     }
 }
