@@ -17,6 +17,7 @@ public class LeftRotationArrByD {
         if (n <= 1) return;   
         
         k = k % n;  
+        
         // reverse first k part
         reverse(nums, 0, k - 1);
         // reverse remaining k-1 part
