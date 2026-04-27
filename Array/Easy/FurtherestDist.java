@@ -15,6 +15,6 @@ public class FurtherestDist {
     public static void main(String[] args) {
         String moves = "L_RL__R";
         int furtherest_dist = furthestDistanceFromOrigin(moves);
-        System.out.println(furtherest_disttwo);
+        System.out.println(furtherest_dist);
     }
 }
