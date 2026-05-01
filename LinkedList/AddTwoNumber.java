@@ -12,7 +12,7 @@ class ListNode {
 public class AddTwoNumber {
     public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         ListNode dummy = new ListNode(0);
-        ListNode ans = dummy;
+        ListNode res = dummy;
         int carry =0 ;
         int totalSum = 0;
 
@@ -38,7 +38,7 @@ public class AddTwoNumber {
             dummy = dummy.next;
 
         }
-    return ans.next;
+    return res.next;
     }
     public static void printList(ListNode node) {
         while (node != null) {
