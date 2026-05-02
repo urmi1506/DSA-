@@ -36,7 +36,7 @@ public class CourseSchedule {
             }
         }
 
-        // Step 3: BFS (Topological Sort)
+        // Step 3: BFS 
         int cnt = 0;
 
         while (!q.isEmpty()) {
