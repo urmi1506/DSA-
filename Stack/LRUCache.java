@@ -20,6 +20,7 @@ public class LRUCache {
     // Get val of key if key exists, otherwise return -1
     public int get(int key) {
         if (map.containsKey(key)) {
+            // get key from map and store in node
             Node node = map.get(key);
             remove(node);
             insert(node);
@@ -36,6 +37,7 @@ public class LRUCache {
             remove(map.get(key));
         }
         if (map.size() == capacity) {
+            // remove LRU 
             remove(tail.prev);
         }
         insert(new Node(key, value));
