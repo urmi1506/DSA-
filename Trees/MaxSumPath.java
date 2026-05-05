@@ -35,8 +35,8 @@ public class MaxSumPath {
     root.right.left = new TreeNode(15);
     root.right.right = new TreeNode(7);
 
-    int res = maxPathSum(root);
+    int max_path_sum = maxPathSum(root);
 
-    System.out.println("Maximum Path Sum: " + res);
+    System.out.println("Maximum Path Sum: " + max_path_sum);
     }
 }
