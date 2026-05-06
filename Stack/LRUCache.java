@@ -50,7 +50,7 @@ public class LRUCache {
         node.next.prev = node.prev;
     }
 
-    // Insert node at head (most recently used pos) of DLL
+    // Insert node at head (most recently used ) of DLL
     private void insert(Node node) {
         map.put(node.key, node);
         node.next = head.next;
