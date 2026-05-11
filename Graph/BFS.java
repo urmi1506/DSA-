@@ -3,35 +3,36 @@ import java.util.*;
 
 public class BFS {
     public static ArrayList<Integer> bfs(ArrayList<ArrayList<Integer>> adj) {
-        // store final ans
-        ArrayList<Integer> res = new ArrayList<>();
-        // traverse levelwise
-        Queue<Integer> q = new LinkedList<>();
+        
         int size = adj.size();
-        // store visited node
-        boolean[] visited = new boolean[size];
+        // initialized arraylist --> store final traversal
+        ArrayList<Integer> bfs = new ArrayList<>();
+        // initialized queue ---> Level wise traversal
+        Queue<Integer> queue =  new LinkedList<>();
+        // initialized boolean array --> store visisted node
+        boolean visited[] = new boolean[size];
         
         // add initial node & mark it visited
-        q.add(0);
+        queue.add(0);
         visited[0] = true;
         
-        // Traverse 
-        while (!q.isEmpty()) {
-            // pop node
-            int node = q.poll();
-            // add to final res
-            res.add(node);
+        // Traverse ---upto queue not empty
+        while(!queue.isEmpty()){
+            // remove node
+            int node = queue.poll();
+            // add to final traversal
+            bfs.add(node);
             
-            // check neighbours
-            for (int curr : adj.get(node)) {
-                // not visited ..add to queue & mark it visited
-                if (!visited[curr]) { 
-                    q.add(curr);
-                    visited[curr] = true;
+            // check neighbours --> not visited then add to queue mark it visited
+            for(int current : adj.get(node)){
+                if(!visited[current]){
+                    queue.add(current);
+                    visited[current]=true;
                 }
             }
+            
         }
-        return res;
+    return bfs;   
     }
 
     public static void main(String[] args) {
