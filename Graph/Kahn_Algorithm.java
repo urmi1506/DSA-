@@ -18,7 +18,7 @@ public class Kahn_Algorithm{
             int v = edges[i][1];
             adj.get(u).add(v);
         }
-        // Step 1: Calculate indegree of each node
+        //Calculate indegree of each node
         int[] indegree = new int[V];
         for (int i = 0; i < V; i++) {
             for (int it : adj.get(i)) {
@@ -26,7 +26,7 @@ public class Kahn_Algorithm{
             }
         }
 
-        // Step 2: Add all nodes with indegree 0 to queue
+        // Add all nodes with indegree 0 to queue
         Queue<Integer> q = new LinkedList<>();
         for (int i = 0; i < V; i++) {
             if (indegree[i] == 0) {
@@ -34,7 +34,7 @@ public class Kahn_Algorithm{
             }
         }
         
-         // Step 3: Perform BFS
+         // Perform BFS
         ArrayList<Integer> topo = new ArrayList<>();
 
         while (!q.isEmpty()) {
