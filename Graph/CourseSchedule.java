@@ -20,7 +20,7 @@ public class CourseSchedule {
             adj.get(b).add(a);
         }
 
-        // Step 1: Calculate indegree
+        //Calculate indegree
         int[] indegree = new int[numCourses];
         for (int i = 0; i < numCourses; i++) {
             for (int it : adj.get(i)) {
@@ -28,7 +28,7 @@ public class CourseSchedule {
             }
         }
 
-        // Step 2: Add nodes with indegree 0
+        //Add nodes with indegree 0
         Queue<Integer> q = new LinkedList<>();
         for (int i = 0; i < numCourses; i++) {
             if (indegree[i] == 0) {
@@ -36,7 +36,7 @@ public class CourseSchedule {
             }
         }
 
-        // Step 3: BFS 
+        // BFS 
         int cnt = 0;
 
         while (!q.isEmpty()) {
