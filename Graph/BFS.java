@@ -1,6 +1,7 @@
 package Graph;
 import java.util.*;
 
+// TC - O(V+E) ,SC -O(V)
 public class BFS {
     public static ArrayList<Integer> bfs(ArrayList<ArrayList<Integer>> adj) {
         
