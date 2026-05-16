@@ -75,11 +75,10 @@ public class RottenOrange{
                 }
             }
 
-            // Only increase time if we still have new oranges to process
+            // Only increase time if remain new oranges to process
             if (!rotten.isEmpty()) days++;
         }
 
-        // If all oranges are rotted, return days; otherwise return -1
         return total == count ? days : -1;
     }
     public static void main(String[] args) {
