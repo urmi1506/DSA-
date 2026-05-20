@@ -58,8 +58,8 @@ public class AddTwoNumber {
         l2.next = new ListNode(6);
         l2.next.next = new ListNode(4);
 
-        ListNode result = addTwoNumbers(l1, l2);
-        printList(result);  
+        ListNode res = addTwoNumbers(l1, l2);
+        printList(res);  
     }
 
 
