@@ -9,11 +9,11 @@ public class MaxSumPath {
             this.val=val;
         }
     }
-    static int ans = Integer.MIN_VALUE;
+    static int max_path_sum = Integer.MIN_VALUE;
 
     public static int maxPathSum(TreeNode root) {
         dfs(root);
-        return ans;
+        return max_path_sum;
     }
 
     static int dfs(TreeNode node) {
@@ -23,7 +23,7 @@ public class MaxSumPath {
         int right = Math.max(0, dfs(node.right));
 
         // Max path THROUGH current node
-        ans = Math.max(ans, node.val + left + right);
+        max_path_sum = Math.max(max_path_sum, node.val + left + right);
 
         // Max path going DOWN from current node
         return node.val + Math.max(left, right);
