@@ -28,9 +28,9 @@ public class MinDepthBT {
     root.right.left = new TreeNode(15);
     root.right.right = new TreeNode(7);
 
-    int res = minDepth(root);
+    int result = minDepth(root);
 
-    System.out.println("Min Depth: " + res);
+    System.out.println("Min Depth: " + result);
     }
 }
 
