@@ -13,5 +13,5 @@ IDE: VS Code
 
 📚 Resources I Follow
 Striver's SDE Sheet
-Love Babbar’s 450 DSA Sheet
+Striver A2Z DSA Sheet
 LeetCode | GeeksforGeeks
