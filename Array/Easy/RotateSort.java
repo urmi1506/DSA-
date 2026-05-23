@@ -14,7 +14,6 @@ public class RotateSort {
 
         if(nums[n-1] > nums[0]) cnt++;
 
-       // return cnt <= 1;
 
         if(cnt <=1 ) return true;
         return false;
