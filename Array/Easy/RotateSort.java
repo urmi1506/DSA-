@@ -4,6 +4,7 @@ public class RotateSort {
     public static boolean rotateSortArr(int nums[]){
         int n=nums.length;
         int cnt=0;
+        
         // check inversion
         // bigger number before a smaller one — inversion.A rotated sorted array can have at most one inversion
         for (int i = 1; i < n; i++) {
