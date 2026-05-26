@@ -4,6 +4,7 @@ import java.util.HashSet;
 
 public class LongestSubstring {
     public static int lengthOfLongestSubstring(String s) {
+      
         int n= s.length();
         int maxLen = 0;
         int left = 0;
