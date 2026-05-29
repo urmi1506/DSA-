@@ -8,12 +8,15 @@ import java.util.List;
 public class MergeInterval {
      public static int[][] merge(int[][] intervals) {
         int n=intervals.length;
-        // sort & compare
+
         Arrays.sort(intervals , (a,b) -> Integer.compare(a[0],b[0]));
+        
         // store ans
         List<int[]> res =new ArrayList<>();
+       
         // Traverse & merge
-        int []curr = intervals[0]; // 1-D arr bcz we compare 1 arr at a time
+        int []curr = intervals[0]; 
+        
         for(int i=1; i<n; i++){
             // Find overalapping
             if(intervals[i][0] <= curr[1]){
