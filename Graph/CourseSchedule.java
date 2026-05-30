@@ -58,7 +58,7 @@ public class CourseSchedule {
         int numCourses = 2;
         int[][] prerequisites = {{1,0}};
 
-        boolean  res = canFinish(numCourses, prerequisites);
-        System.out.println(res);
+        boolean  result = canFinish(numCourses, prerequisites);
+        System.out.println(result);
   }
 }
