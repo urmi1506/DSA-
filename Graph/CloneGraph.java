@@ -38,15 +38,15 @@ public class CloneGraph {
         }
 
         // Clone node
-        Node copy = new Node(node.val);
-        map.put(node, copy);
+        Node clone = new Node(node.val);
+        map.put(node, clone);
 
         // Clone neighbors correctly
         for (Node nei : node.neighbors) {
-            copy.neighbors.add(cloneGraph(nei));
+            clone.neighbors.add(cloneGraph(nei));
         }
 
-        return copy;
+        return clone;
     }
 
     public static void main(String[] args) {
