@@ -37,4 +37,10 @@ public class IslandPerimeter {
         }
     return perimeter;
     }
+
+public static void main(String[] args) {
+    int[][] grid = {{1}};
+    int Perimeter = islandPerimeter(grid);
+    System.out.println(Perimeter);
+}
 }
