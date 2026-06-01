@@ -5,15 +5,14 @@ import java.util.HashMap;
 public class TwoSum2 {
     public static int[] twoSum(int[]nums ,int target){
 
-        // Array to store ans
         int ans[] = new int[2];
         ans[0] =ans[1] = -1;
 
-        // hashmap 
         HashMap <Integer,Integer> map =new HashMap<>();
         
         for (int i = 0; i < nums.length; i++) {
             int num =nums[i];
+
             // calculate MoreNeeded To reach target
             int moreNeeded = target - num;
             if (map.containsKey(moreNeeded)){
