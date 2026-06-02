@@ -10,20 +10,20 @@ public class RottenOrange{
         if(grid.length == 0) return 0;
 
         // cal size for rows & cols
-        int m =grid.length;
-        int n=grid[0].length;
+        int rows =grid.length;
+        int cols=grid[0].length;
 
         // total --->Store total rotten+fresh oranges
         int total=0;
         //cnt --> store oranges that became rotten
         int cnt =0;
+        int minutes=0;
         // queue --> perform BFS
         Queue<int[]> rotten = new LinkedList<>();
-        int minutes=0;
 
         // Traverse through grid
-        for(int i=0; i<m; i++){
-            for(int j=0; j<n; j++){
+        for(int i=0; i<rows; i++){
+            for(int j=0; j<cols; j++){
                 // check rotten oranges + fresh oranges
                 if(grid[i][j] != 0){
                     total++;
@@ -56,7 +56,7 @@ public class RottenOrange{
                     int nx= x+dx[d];
                     int ny =y+dy[d];
                 // check boudaries & non fresh oranges
-                if(nx <0 || ny<0 || nx >=m|| ny>=n|| grid[nx][ny] !=1 ){
+                if(nx <0 || ny<0 || nx >=rows|| ny>=cols|| grid[nx][ny] !=1 ){
                     continue;
                 }
                 // make fresh orange rotten
