@@ -23,8 +23,9 @@ public class RightViewBT {
         if(curr == null) return;
         
         //Root -- right -- left
-        if(currLevel == res.size()) res.add(curr.data);
-
+        if(currLevel == res.size()) {
+            res.add(curr.data);
+        }
         rightView(curr.right , res ,currLevel + 1);
         rightView(curr.left , res , currLevel+1);
     }
