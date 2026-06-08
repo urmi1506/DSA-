@@ -16,8 +16,8 @@ public class Anagrams2 {
 
         }
         //check anagrams
-        for (int check: arr) {
-            if(check != 0) return false;
+        for (int count: arr) {
+            if(count != 0) return false;
         }
     return true;
     }
