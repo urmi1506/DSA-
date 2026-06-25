@@ -1,9 +1,5 @@
 package LinkedList;
 
-import java.util.ArrayList;
-import java.util.List;
-
-
 public class RemoveEnd {
     static class ListNode {
         int val;
@@ -13,26 +9,30 @@ public class RemoveEnd {
         }
       }
     public static ListNode removeNthFromEnd(ListNode head, int n) {
-        //store node in list
-        List<ListNode> list = new ArrayList<>();
+        // Edge case
+        if (head == null ) return null;
+        
+        // cal length of whole linkedlist
+        int size = 0;        
         ListNode temp = head;
         while(temp != null){
-            list.add(temp);
-            temp=head.next;
+            size++;
+            temp=temp.next;
         }
 
-        //Find idx to remove
-        int size = list.size();
-        int idxRemove = size - n ;
+        if(size == n){
+            return head.next;
+        }
 
-        //Handle head removal
-        if(idxRemove == 0) return head.next;
+        // traverse upto m
+        int m = size - n;
+        ListNode curr = head;
+        for(int i=1; i<m; i++){
+           curr = curr.next;
+        }
+        // remove node
+        curr.next= curr.next.next;
 
-        //Remove node by connecting prev one
-        ListNode prev = list.get(idxRemove - 1);
-        prev.next = (idxRemove +1 < size) ? list.get(idxRemove + 1) : null;
-        
-    //return updated head
     return head;
     }
     public static void main(String[] args) {
@@ -42,7 +42,9 @@ public class RemoveEnd {
         head.next.next=new ListNode(3);
         head.next.next.next=new ListNode(4);    
         head.next.next.next.next=new ListNode(5);
+
         ListNode res=removeNthFromEnd(head,n);
+
         while(res!=null){
             System.out.print(res.val+" ");
             res=res.next;
