@@ -10,19 +10,24 @@ public class RemoveFromEnd {
       ListNode(int val, ListNode next) { this.val = val; this.next = next; }
   }
     public static ListNode removeFromNthNode(ListNode head ,int n){
-        ListNode res=new ListNode(0,head);
-        ListNode dummy=res;
+         // dummy before head (handles delete head)
+        ListNode res = new ListNode(0, head);
+        ListNode dummy = res;
 
-        for(int i=0; i<n; i++){
-            head=head.next;
+        // move fast pointer n steps
+        for (int i = 0; i < n; i++) {
+            head = head.next;
         }
 
-        while(head!=null){
-            head=head.next;
-            dummy=dummy.next;
+        // move both until fast reaches end
+        while (head != null) {
+            head = head.next;
+            dummy = dummy.next;
         }
 
-        dummy.next=dummy.next.next;
+        // delete target
+        dummy.next = dummy.next.next;
+
         return res.next;
     }
     public static void main(String[] args) {
