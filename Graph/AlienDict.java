@@ -1,85 +1,116 @@
 package Graph;
+
 import java.util.*;
 import java.util.List;
 
 public class AlienDict {
-   
-    public static String findOrder(String[] dict, int n, int k) {
-        
-        List<List<Integer>> adj = new ArrayList<>();
-        for (int i = 0; i < k; i++) {
-            adj.add(new ArrayList<>());
-        }
+        // Kahn's BFS Topological Sort
+        private static List<Integer> topoSort(int V, List<List<Integer>> adj) {
 
-        for (int i = 0; i < n - 1; i++) {
-            String word1 = dict[i];
-            String word2 = dict[i + 1];
-            int minLen = Math.min(word1.length(), word2.length());
+            int[] indegree = new int[V];
 
-            for (int j = 0; j < minLen; j++) {
-                if (word1.charAt(j) != word2.charAt(j)) {
-                    int u = word1.charAt(j) - 'a';
-                    int v = word2.charAt(j) - 'a';
-                    adj.get(u).add(v);
-                    System.out.println("Edge added: " + word1.charAt(j) + " -> " + word2.charAt(j));
-                    break;
+            // build indegree
+            for (int i = 0; i < V; i++) {
+                for (int v : adj.get(i)) {
+                    indegree[v]++;
                 }
             }
-        }
 
-        int[] inDegree = new int[k];
-        for (int i = 0; i < k; i++) {
-            for (int neighbor : adj.get(i)) {
-                inDegree[neighbor]++;
+            Queue<Integer> q = new LinkedList<>();
+
+            // push all 0 indegree nodes
+            for (int i = 0; i < V; i++) {
+                if (indegree[i] == 0)
+                    q.add(i);
             }
-        }
 
-        System.out.println("In-degrees: " + Arrays.toString(inDegree));
+            List<Integer> res = new ArrayList<>();
 
-        Queue<Integer> queue = new LinkedList<>();
-        StringBuilder res = new StringBuilder();
+            // BFS
+            while (!q.isEmpty()) {
+                int u = q.poll();
+                res.add(u);
 
-        for (int i = 0; i < k; i++) {
-            if (inDegree[i] == 0) {
-                queue.add(i);
-                System.out.println("Node with 0 in-degree added to queue: " + (char) (i + 'a'));
-            }
-        }
-
-        // Process the nodes
-        while (!queue.isEmpty()) {
-            int node = queue.poll();
-            res.append((char) (node + 'a'));
-            System.out.println("Processing node: " + (char) (node + 'a'));
-
-            for (int neighbor : adj.get(node)) {
-                inDegree[neighbor]--;
-                System.out.println("Decremented in-degree of: " + (char) (neighbor + 'a'));
-                if (inDegree[neighbor] == 0) {
-                    queue.add(neighbor);
-                    System.out.println("Node with 0 in-degree added to queue: " + (char) (neighbor + 'a'));
+                for (int v : adj.get(u)) {
+                    indegree[v]--;
+                    if (indegree[v] == 0)
+                        q.add(v);
                 }
             }
+
+            return res;
         }
 
-        if (res.length() < k) {
-            return "";
-        }
+        public static String findOrder(String[] words) {
 
-        System.out.println("Topological order: " + res.toString());
-        return res.toString();
+            int V = 26;
+
+            List<List<Integer>> adj = new ArrayList<>();
+            for (int i = 0; i < V; i++)
+                adj.add(new ArrayList<>());
+
+            boolean[] present = new boolean[V];
+
+            // mark used chars
+            for (String w : words) {
+                for (char c : w.toCharArray()) {
+                    present[c - 'a'] = true;
+                }
+            }
+
+            // build graph from adjacent words
+            for (int i = 0; i < words.length - 1; i++) {
+
+                String a = words[i], b = words[i + 1];
+
+                // invalid prefix case
+                if (a.length() > b.length() && a.startsWith(b))
+                    return "";
+
+                int len = Math.min(a.length(), b.length());
+
+                // first mismatch gives order
+                for (int j = 0; j < len; j++) {
+                    if (a.charAt(j) != b.charAt(j)) {
+                        int u = a.charAt(j) - 'a';
+                        int v = b.charAt(j) - 'a';
+                        adj.get(u).add(v);
+                        break;
+                    }
+                }
+            }
+
+            List<Integer> topo = topoSort(V, adj);
+
+            // cycle check
+            int used = 0;
+            for (boolean p : present)
+                if (p)
+                    used++;
+
+            int got = 0;
+            for (int x : topo)
+                if (present[x])
+                    got++;
+
+            if (used != got)
+                return "";
+
+            // build answer
+            StringBuilder sb = new StringBuilder();
+            for (int x : topo) {
+                if (present[x])
+                    sb.append((char) (x + 'a'));
+            }
+
+            return sb.toString();
     }
 
     public static void main(String[] args) {
 
-        String[] dict1 = {"baa", "abcd", "abca", "cab", "cad"};
-        int n1 = dict1.length;
-        int k1 = 4;
-        String order1 = findOrder(dict1, n1, k1);
+        String[] words = { "baa", "abcd", "abca", "cab", "cad" };
+        String order1 = findOrder(words);
         System.out.println("Order of characters: " + order1);
         System.out.println();
-
-       
     }
-
 }
