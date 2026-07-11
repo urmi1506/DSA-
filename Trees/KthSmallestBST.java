@@ -20,10 +20,6 @@ public class KthSmallestBST {
             root = root.left;
           }
 
-        if (stack.isEmpty()) {
-                return -1;
-            }
-
         root = stack.pop();
         k--;
 
