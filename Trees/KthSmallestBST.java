@@ -36,7 +36,6 @@ public class KthSmallestBST {
         root.right = new TreeNode(7);
 
         int k=2;
-
         int res = kthSmallest(root, k);
         System.out.println(res);
   }
