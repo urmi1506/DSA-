@@ -39,8 +39,8 @@ public class MedianArr {
     public static void main(String[] args) {
         int[]nums1 = {1,3}, nums2 = {2};
 
-        double res = findMedianSortedArrays(nums1, nums2);
-        System.out.println(res);
+        double result = findMedianSortedArrays(nums1, nums2);
+        System.out.println(result);
     }
 
 }
