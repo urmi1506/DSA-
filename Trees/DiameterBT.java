@@ -19,6 +19,7 @@ public class DiameterBT {
     public static int height(TreeNode root) {
         if (root == null)
             return 0;
+        
         // check children height
         int lh = height(root.left);
         int rh = height(root.right);
