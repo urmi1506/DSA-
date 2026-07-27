@@ -4,6 +4,7 @@ public class KadaneAlgo {
         int n=nums.length;
         int sum =0;
         int maxi=Integer.MIN_VALUE;
+        
         for (int i = 0; i < n; i++) {
             sum+=nums[i];
             if (sum > maxi) maxi=sum;
