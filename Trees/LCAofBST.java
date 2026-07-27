@@ -11,16 +11,21 @@ public class LCAofBST {
     }
 
     public static TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
+        // BAse case
         if (root == null )
             return root;
-
+        
+        // As BST --> left < root < right
         if(p.val < root.val && q.val < root.val)
             return lowestCommonAncestor(root.left, p, q);
 
         if(p.val > root.val && q.val > root.val)
             return lowestCommonAncestor(root.right, p, q);
 
-        
+        // // Otherwise, we've found the split point:
+        // - One node is on the left and the other is on the right, OR
+        // - The current node is equal to p or q.
+        // In both cases, the current node is LCA
         return root;
 
     }
@@ -39,4 +44,8 @@ public class LCAofBST {
         System.out.println(ans.val);
 
     }
+
+    /*tc - O(n) SC- O(h)
+    Balance tree - TC &SC - O(log n) as its each next level node is 2^n previous
+    Skewed - O(n) Sc-O(h)  */
 }
