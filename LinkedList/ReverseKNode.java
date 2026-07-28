@@ -11,6 +11,7 @@ class ListNode{
 }
 public class ReverseKNode{
     public static ListNode reverseKGroup(ListNode head, int k) {
+        // Edge case
         if(head == null)
            return null;
 
