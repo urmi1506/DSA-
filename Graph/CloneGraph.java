@@ -32,16 +32,16 @@ public class CloneGraph {
         // Edge case
         if (node == null) return null;
 
-        // Already cloned
+        // Already cloned -->if node already +nt in map
         if (map.containsKey(node)) {
             return map.get(node);
         }
 
-        // Clone node
+        // Clone node -->if not cloned create new node
         Node clone = new Node(node.val);
         map.put(node, clone);
 
-        // Clone neighbors correctly
+        // Clone neighbors to clone and added to current clone node neighbor list
         for (Node nei : node.neighbors) {
             clone.neighbors.add(cloneGraph(nei));
         }
@@ -73,3 +73,5 @@ public class CloneGraph {
         
     }
 }
+/*Tc - O(V+E) ---As every node clone once & check neighbor once
+Sc - O(V) ---store one entry per node */
