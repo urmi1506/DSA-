@@ -12,7 +12,8 @@ public class RotateListByK {
     }
     public static ListNode rotateRight(ListNode head, int k) {
         // Edge case
-        if(head == null || head.next ==null || k==0) return head;
+        if(head == null || head.next ==null || k==0) 
+            return head;
 
         // check length and tail
         int len =1;
