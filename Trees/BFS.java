@@ -17,6 +17,7 @@ public class BFS {
         Queue<TreeNode> queue=new LinkedList<TreeNode>();
         // store the final ans
         List<List<Integer>> list=new LinkedList<List<Integer>>();
+        
         // Edge case
         if(root==null){
             return list;
