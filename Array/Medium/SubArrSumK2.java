@@ -7,6 +7,7 @@ public class SubArrSumK2 {
         int n = nums.length;
         int cnt = 0;
         int sum = 0;
+        
         //store prefix sum & its freq
         HashMap<Integer, Integer> map = new HashMap<>();
         map.put(0, 1);  
