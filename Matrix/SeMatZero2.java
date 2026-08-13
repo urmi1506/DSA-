@@ -17,7 +17,7 @@ public class SeMatZero2 {
                 }
             }
         }
-// covert 1 to 0
+        // covert 1 to 0
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < m; j++) {
                 if (row[i] == 1 || col[j] == 1) {
