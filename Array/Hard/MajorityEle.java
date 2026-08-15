@@ -18,7 +18,6 @@ public class MajorityEle {
                 cnt--;
             }
         }
-
         // verify majority element 
         cnt =0;
         for(int num : nums){
