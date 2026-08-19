@@ -4,52 +4,63 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 public class NoIsland {
-    static int[][] directions = {
-        {0,1},
-        {1,0},
-        {0,-1},
-        {-1,0}
-    };
     public static int numIslands(char[][] grid) {
-        int rows = grid.length;
-        int cols = grid[0].length;
-        int island =0;
+        int m = grid.length;
+        int n = grid[0].length;
+        int cnt = 0;
 
-        for(int r=0; r<rows; r++){
-            for(int c=0; c<cols; c++){
+        // Traverse Grid
+        for(int r=0; r<m; r++){
+            for(int c=0; c<n; c++){
+                // check for land
                 if(grid[r][c] == '1'){
+                    // increase cnt
+                    cnt++;
+                    // check neighbors -->dfs
                     bfs(grid ,r,c);
-                    island++;
                 }
             }
         }
-    return island;
+    return cnt;
     }
 
-    public static void bfs(char[][]grid ,int r ,int c){
-        int rows =grid.length;
-        int cols =grid[0].length;
-        
-        Queue<int[]> queue = new LinkedList<>();
+    private static void bfs(char[][]grid ,int r ,int c){
+        int m = grid.length;
+        int n = grid[0].length;
+        Queue<int[]> q = new LinkedList<>();
+        // start pt
         grid[r][c] = '0';
-        queue.add(new int[] {r ,c});
+        // add to queue
+        q.offer(new int[] {r,c});
+        
+        // initialized all four direction
+        int []dx ={0,0,1,-1};
+        int []dy={1,-1,0,0};
 
-        while(!queue.isEmpty()){
-            int[] node = queue.poll();
-            int x = node[0];
-            int y =node[1];
+        // traverse upto q not empty
+        while(!q.isEmpty()){
+            int[] currNode = q.poll();
+            //to check neighbor we want exaact r & c of currNode
+            int x = currNode[0];
+            int y = currNode[1];
 
-            for(int[] dir : directions){
-                int nr = x + dir[0];
-                int nc = y + dir[1];
-
-                if(nr >=0  && nc >=0 && nr < rows && nc < cols && grid[nr][nc] == '1'){
-                    queue.add(new int[] {nr ,nc});
+            //explore all 4 dir
+            for(int d=0; d<4; d++){
+                int nr = x + dx[d];
+                int nc = y + dy[d];
+            
+                // check edge cases
+                if(nr <0 || nr >= m ||
+                   nc < 0 || nc >= n ||
+                   grid[nr][nc] == '0'){
+                        continue;
+                    }
+                // add to q & mark visited
+                    q.offer(new int[] {nr ,nc});
                     grid[nr][nc] = '0';
-                }
             }
+            
         }
-
     }
     public static void main(String[] args) {
         char [][]grid = {{'1','1','1','1','0'},{'1','1','0','1','0'},
