@@ -28,7 +28,7 @@ public class CheckParanthesis {
     return s1.isEmpty();
     }
     public static void main(String[] args) {
-        String s=  "(]";
+        String s=  "(]]";
         System.out.println(isValid(s));
     }
 }
