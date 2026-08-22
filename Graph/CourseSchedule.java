@@ -54,7 +54,7 @@ public class CourseSchedule {
                 }
             }
         }
-        // All courses proceed (no cycle)
+        // All courses proceed--> their is no cycle
         return cnt == numCourses;
     }
   
