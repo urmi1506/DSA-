@@ -7,6 +7,7 @@ public class LongestConsecutive {
         int n = nums.length;
         // Edge case --[]
         if (n == 0) return 0;
+        
         // handle duplicates
         HashSet<Integer> set = new HashSet<>();
 
