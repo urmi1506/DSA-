@@ -23,6 +23,7 @@ public class LongestConsecutive {
 
                 int currNum = num;
                 int currCnt = 1;
+                
                 // check consecutive
                 while (set.contains(currNum + 1)) {
                     currNum++;
@@ -35,7 +36,7 @@ public class LongestConsecutive {
     return longest;
     }
     public static void main(String[] args) {
-        int[] nums ={100,4,200,1,3,2};
+        int[] nums ={100,4,200,1,3,2,5};
 
         int Result = longestConsecutive(nums);
         System.out.println(Result);
