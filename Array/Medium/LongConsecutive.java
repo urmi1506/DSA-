@@ -23,9 +23,7 @@ public class LongConsecutive {
                 longest=Math.max(currCnt, longest);
 
             } 
-            
             // handle non-consecutive Ele -->tc :[1,2,6,7,8]
-
             else currCnt =1;
 
         }
@@ -33,7 +31,7 @@ public class LongConsecutive {
         
     }
     public static void main(String[] args) {
-        int []nums={2};
+        int []nums={2 ,1,4};
         System.out.println(longestConsecutive(nums));
     }
 }
