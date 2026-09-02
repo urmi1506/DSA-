@@ -18,7 +18,6 @@ public class AddTwoNo {
         int carry = 0;
         //Treverse both list
         while (l1 != null || l2 != null) {
-            //Extract digit
             int val1 = (l1 != null) ? l1.val : 0; 
             int val2 = (l2 != null) ? l2.val : 0;
             
