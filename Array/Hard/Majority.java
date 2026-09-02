@@ -9,7 +9,7 @@ public class Majority {
         return nums[n/2];
     }
     public static void main(String[] args) {
-        int nums[]={3,2,3};
+        int nums[]={3,2,3,3};
         System.out.println(majorityElelment(nums));
     }
 }
