@@ -31,7 +31,7 @@ public class MajorityEle {
     return -1;
     }
     public static void main(String[] args) {
-        int[]nums={3,2,3};
+        int[]nums={3,2,3,3};
         System.out.println(majorityElement(nums));
     }
 }
