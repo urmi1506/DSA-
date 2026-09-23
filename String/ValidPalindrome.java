@@ -3,8 +3,7 @@ package String;
 public class ValidPalindrome {
     public static boolean isPalindrome(String s) {
         // Edge Case --> null i/p
-        if(s == null)
-           return true;
+        if(s == null)return true;
 
         int low =0;
         int high = s.length() - 1;
