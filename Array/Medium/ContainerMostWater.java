@@ -14,7 +14,7 @@ public class ContainerMostWater {
                 int width = right-left;
                 // cal minHeight -->Shorter wall limit water
                 int minHeight = Math.min(height[left],height[right]);
-                // Cal area of curr pair
+                // Cal area of current pair
                 int area = width * minHeight;
 
                 // cal maxWater -->finally want container with most water
