@@ -7,7 +7,6 @@ public class TrappingRainWater {
 
         int leftMax = 0;
         int rightMax = 0;
-
         int totalWater = 0;
 
         while (left < right) {
