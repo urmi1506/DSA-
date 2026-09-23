@@ -6,6 +6,7 @@ public class TwoSumSorted {
         int right = numbers.length - 1;
 
         while(left < right ){
+            // cal sum 
             int sum = numbers[left] + numbers[right];
 
             if(sum == target){
