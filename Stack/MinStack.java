@@ -11,6 +11,7 @@ public class MinStack {
     
     public void push(int val) {
         stack.push(val);
+        // push in min stack only for following cod
         if (minStack.isEmpty() || val <= minStack.peek()) {
             minStack.push(val);
         }
@@ -19,6 +20,7 @@ public class MinStack {
     public void pop() {
        if (!stack.isEmpty()) {
             int removed = stack.pop();
+            // remove element from minstack for following cond ->bcz the original stack remove that val
             if (removed == minStack.peek()) {
                 minStack.pop();
             }
