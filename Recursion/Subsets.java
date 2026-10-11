@@ -16,9 +16,7 @@ public class Subsets {
             return;
         }
 
-        // Exclude 
-        // solve(ans, output, index + 1, nums);
-
+        
         // Include 
         output.add(nums[index]);
         solve(ans, output, index + 1, nums);
