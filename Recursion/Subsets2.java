@@ -31,7 +31,7 @@ public class Subsets2 {
         List<List<Integer>> ans = new ArrayList<>();
         List<Integer> output = new ArrayList<>();
         
-        Arrays.sort(nums); // handle duplicates
+        Arrays.sort(nums); 
         
         print(nums, nums.length, 0, ans, output);
         
