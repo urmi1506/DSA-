@@ -36,7 +36,7 @@ public class Dijkstra {
         // src --> zero dist
         dist[src] = 0;
 
-        // pq --> min heap
+        // pq --> min heap -->want shortest dist node
         PriorityQueue<int[]> pq = new PriorityQueue<>((a, b) -> a[0] - b[0]);
 
         // add src to pq
@@ -45,7 +45,7 @@ public class Dijkstra {
         // run upto pq became empty
         while (!pq.isEmpty()) {
 
-            // remove currNode --> shortest dist node
+            // remove currNode --> shortest dist node as use min heap
             int[] curr = pq.poll();
 
             int currDist = curr[0];
