@@ -1,33 +1,37 @@
 package Hard;
-
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 public class ThreeSum2 {
     public static List<List<Integer>> triplet(int n, int[] arr) {
-        Set<List<Integer>> st = new HashSet<>();
+        List<List<Integer>> res = new ArrayList<>();
+        Arrays.sort(arr);
+        
+        for(int i=0; i<arr.length; i++){
+            // skip duplicates
+            if(i > 0 && arr[i] == arr   [i-1])
+               continue;
 
-        for (int i = 0; i < n; i++) {
-            Set<Integer> hashset = new HashSet<>();
-            for (int j = i + 1; j < n; j++) {
-                //Calculate the 3rd element:
-                int third = -(arr[i] + arr[j]);
+            int j=i+1;
+            int k=arr.length - 1;
 
-                //Find the element in the set:
-                if (hashset.contains(third)) {
-                    List<Integer> temp = Arrays.asList(arr[i], arr[j], third);
-                    temp.sort(null);
-                    st.add(temp);
+            while(j < k){
+                int sum = arr[i]+arr[j]+arr[k];
+                if(sum > 0)
+                   k--;
+                
+                else if(sum <0)
+                    j++;
+
+                else{
+                    res.add(Arrays.asList(arr[i] ,arr[j] ,arr[k]));
+                    j++;
+
+                    while(arr[j] == arr[j-1] && j<k){
+                        j++;
+                    }
                 }
-                hashset.add(arr[j]);
             }
         }
-
-        // store the set elements in the answer:
-        List<List<Integer>> ans = new ArrayList<>(st);
-        return ans;
+    return res;  
     }
 
     public static void main(String[] args) {
