@@ -16,7 +16,6 @@ public class MiddleLL {
     public static ListNode middleNode(ListNode head) {
         ArrayList<ListNode> list = new ArrayList<>();
         ListNode curr = head;
-
         // 1.store in temp arraylist
         while (curr != null) {
             list.add(curr);
