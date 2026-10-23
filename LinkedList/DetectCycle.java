@@ -13,6 +13,7 @@ public class DetectCycle {
     
     public static boolean hasCycle(ListNode head){
         HashSet<ListNode>set=new HashSet<>();
+        
         while(head != null){
             // Detect cycle logic
             if(set.contains(head)) return true;
