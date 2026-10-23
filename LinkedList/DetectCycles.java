@@ -12,12 +12,13 @@ public class DetectCycles {
         // Floyd Algorithm
         ListNode slow=head;
         ListNode fast=head;
-        
         // Detect cycle logic
         while(fast!=null && fast.next!=null){
             slow=slow.next;
             fast=fast.next.next;
-            if(slow==fast) return true;
+            
+            if(slow==fast) 
+                return true;
         }
         return false;
     }
