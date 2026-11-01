@@ -21,7 +21,7 @@ class TreeNode {
 
 public class MaxHeight {
     public static int maxDepth(TreeNode root) {
-        // Base Case
+        // Edge Case
         if (root == null)
             return 0;
 
