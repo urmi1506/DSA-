@@ -2,19 +2,17 @@ package Easy;
 
 public class MissingNo2 {
     public static int missingNumber(int[] nums) {
-         int n = nums.length ;
+        int n = nums.length ;
         int xor1 = 0, xor2 = 0;
 
         // XOR all arr elements
         for (int i = 0; i < n ; i++) {
             xor2 ^= nums[i];
         }
-
         // XOR all no from 1 to n
         for (int i = 0; i <= n; i++) {
             xor1 ^= i;
         }
-
         // Missing no = xor1 ^ xor2
         return xor1 ^ xor2;
     }
