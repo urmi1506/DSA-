@@ -13,11 +13,15 @@ public class SecLargeElement {
             // new Largest assign to largest
                 largest = num ;
             }
-
+            // Tc : 10 5 20
             else if (num > second && num != largest) second = num;
-
         }
+        // TC : 10 10  10 --> -1
     return (second == Integer.MIN_VALUE) ? -1 : second ;
 
+    }
+    public static void main(String[] args) {
+        int []arr={3,3,6,5};
+        System.out.println(secondLargestElement(arr));
     }
 }
